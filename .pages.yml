@@ -1,4 +1,3 @@
-# .pages.yml
 site: https://al-qaddari.vercel.app/
 
 storage:
@@ -10,124 +9,11 @@ media:
   path: public/uploads
   url: /uploads
 
-collections:
-  - name: books
-    path: books
-    pattern: '**/*.md'
-    fields:
-      - name: title
-        type: string
-        required: true
-      - name: author
-        type: string
-        required: true
-      - name: description
-        type: string
-        required: true
-      - name: cover
-        type: image
-        required: false
-      - name: file
-        type: string
-        required: true
-        label: رابط التحميل (URL)
-      - name: date
-        type: date
-        required: false
-      - name: tags
-        type: list
-        items:
-          type: string
-      - name: featured
-        type: boolean
-        default: false
-
-  - name: apps
-    path: apps
-    pattern: '**/*.md'
-    fields:
-      - name: title
-        type: string
-        required: true
-      - name: description
-        type: string
-        required: true
-      - name: type
-        type: select
-        options:
-          - pwa
-          - website
-        required: true
-      - name: category
-        type: select
-        options:
-          - تعليمي
-          - نشر
-          - مجتمعي
-          - أداة
-          - أخرى
-        required: true
-      - name: tags
-        type: list
-        items:
-          type: string
-      - name: featured
-        type: boolean
-        default: false
-      - name: image
-        type: image
-        required: false
-      - name: url
-        type: string
-        required: false
-        label: رابط التطبيق
-      - name: note
-        type: string
-        required: false
-      - name: date
-        type: date
-        required: false
-
-  - name: articles
-    path: articles
-    pattern: '**/*.md'
-    fields:
-      - name: title
-        type: string
-        required: true
-      - name: date
-        type: date
-        required: true
-      - name: description
-        type: string
-        required: true
-      - name: tags
-        type: list
-        items:
-          type: string
-      - name: draft
-        type: boolean
-        default: false
-      - name: source
-        type: select
-        options:
-          - armalqaddaaree
-          - en-armalqaddaaree
-          - al-albaanee
-          - scourgeofphotography
-          - raqmanat
-          - islaamchildrenbooks
-        required: true
-      - name: language
-        type: select
-        options:
-          - ar
-          - en
-        default: ar
-      - name: sourceUrl
-        type: string
-        required: false
-        label: رابط المصدر الأصلي
-      - name: featured
-        type: boolean
-        default: false
+# collections:
+#   - name: books
+#     path: books
+#     pattern: '**/*.md'
+#     fields:
+#       - name: title
+#         type: string
+# ...

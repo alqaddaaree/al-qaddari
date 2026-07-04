@@ -40,8 +40,8 @@ const articles = defineCollection({
     tags: z.array(z.string()).optional(),
     draft: z.boolean().default(false),
     source: z.enum([
-      'en-armalqaddaaree',
       'armalqaddaaree',
+      'en-armalqaddaaree',
       'al-albaanee',
       'scourgeofphotography',
       'raqmanat',
