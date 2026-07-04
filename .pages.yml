@@ -14,6 +14,7 @@ collections:
   - name: books
     path: books
     pattern: '**/*.md'
+    slug: "{{title | slug}}"
     fields:
       - name: title
         type: string
@@ -45,6 +46,7 @@ collections:
   - name: apps
     path: apps
     pattern: '**/*.md'
+    slug: "{{title | slug}}"
     fields:
       - name: title
         type: string
@@ -91,6 +93,7 @@ collections:
   - name: articles
     path: articles
     pattern: '**/*.md'
+    slug: "{{title | slug}}"
     fields:
       - name: title
         type: string
@@ -131,6 +134,3 @@ collections:
       - name: featured
         type: boolean
         default: false
-      # The actual Markdown content (body) is special – it's not a field, it's the content after frontmatter.
-      # Pages CMS automatically treats the file content as a "body" field when editing.
-      # So we do NOT define a "body" field here; the CMS handles it automatically.
