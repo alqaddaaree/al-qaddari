@@ -1,0 +1,177 @@
+# .pages.yml
+
+# Site metadata
+site: https://al-qaddari.vercel.app/
+title: "عبد الرحمن القداري"
+logo: "/favicon.ico"
+
+# Storage configuration
+storage:
+  type: "fs"
+  path: "./src/content"
+
+# Media files (images)
+media:
+  type: "fs"
+  path: "./public/uploads"
+  url: "/uploads"
+
+# Collections
+collections:
+  # ─── Books ───
+  books:
+    name: "الكتب"
+    folder: "books"
+    format: "yaml-frontmatter"
+    fields:
+      - name: "title"
+        label: "عنوان الكتاب"
+        type: "string"
+        required: true
+      - name: "author"
+        label: "المؤلف"
+        type: "string"
+        required: true
+      - name: "description"
+        label: "وصف مختصر"
+        type: "text"
+        required: true
+      - name: "file"
+        label: "رابط التحميل (Google Drive أو URL مباشر)"
+        type: "string"
+        required: true
+      - name: "date"
+        label: "تاريخ الإصدار"
+        type: "date"
+        required: false
+      - name: "cover"
+        label: "غلاف الكتاب"
+        type: "image"
+        required: false
+      - name: "tags"
+        label: "الوسوم"
+        type: "list"
+        items:
+          type: "string"
+        required: false
+      - name: "featured"
+        label: "مميّز"
+        type: "boolean"
+        default: false
+
+  # ─── Apps ───
+  apps:
+    name: "التطبيقات"
+    folder: "apps"
+    format: "yaml-frontmatter"
+    fields:
+      - name: "title"
+        label: "عنوان التطبيق"
+        type: "string"
+        required: true
+      - name: "description"
+        label: "وصف مختصر"
+        type: "text"
+        required: true
+      - name: "type"
+        label: "النوع"
+        type: "select"
+        options:
+          - "pwa"
+          - "website"
+        required: true
+      - name: "category"
+        label: "التصنيف"
+        type: "select"
+        options:
+          - "تعليمي"
+          - "نشر"
+          - "مجتمعي"
+          - "أداة"
+          - "أخرى"
+        required: true
+      - name: "date"
+        label: "تاريخ الإصدار"
+        type: "date"
+        required: false
+      - name: "url"
+        label: "رابط التطبيق"
+        type: "string"
+        required: false
+      - name: "image"
+        label: "صورة توضيحية"
+        type: "image"
+        required: false
+      - name: "tags"
+        label: "الوسوم"
+        type: "list"
+        items:
+          type: "string"
+        required: false
+      - name: "note"
+        label: "ملاحظة إضافية"
+        type: "text"
+        required: false
+      - name: "featured"
+        label: "مميّز"
+        type: "boolean"
+        default: false
+
+  # ─── Articles ───
+  articles:
+    name: "المقالات"
+    folder: "articles"
+    format: "yaml-frontmatter"
+    fields:
+      - name: "title"
+        label: "عنوان المقال"
+        type: "string"
+        required: true
+      - name: "date"
+        label: "تاريخ النشر"
+        type: "date"
+        required: true
+      - name: "description"
+        label: "وصف مختصر"
+        type: "text"
+        required: true
+      - name: "tags"
+        label: "الوسوم"
+        type: "list"
+        items:
+          type: "string"
+        required: false
+      - name: "draft"
+        label: "مسودة (لا تظهر في الإنتاج)"
+        type: "boolean"
+        default: false
+      - name: "featured"
+        label: "مميّز"
+        type: "boolean"
+        default: false
+      - name: "source"
+        label: "المصدر"
+        type: "select"
+        options:
+          - "armalqaddaaree"
+          - "en-armalqaddaaree"
+          - "al-albaanee"
+          - "scourgeofphotography"
+          - "raqmanat"
+          - "islaamchildrenbooks"
+        required: true
+      - name: "language"
+        label: "اللغة"
+        type: "select"
+        options:
+          - "ar"
+          - "en"
+        default: "ar"
+      - name: "sourceUrl"
+        label: "رابط المصدر الأصلي (Blogger)"
+        type: "string"
+        required: false
+      - name: "body"
+        label: "محتوى المقال"
+        type: "richtext"
+        required: true

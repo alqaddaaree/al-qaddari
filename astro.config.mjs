@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://al-qaddari.com', // ← Replace with your actual domain
+  site: 'https://al-qaddari.vercel.app/', // ← Replace with your actual domain
   integrations: [
     sitemap({
       // Optional: filter pages
