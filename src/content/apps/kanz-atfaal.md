@@ -3,7 +3,10 @@ title: كنز أطفال
 description: تطبيق لتعليم العقيدة ومبادئ الإسلام للأطفال والبادئين
 type: pwa
 category: تعليمي
-tags: [تعليم, أطفال, عقيدة]
+tags:
+  - تعليم
+  - أطفال
+  - عقيدة
 featured: true
 image: /projects/kanz-atfaal.svg
 url: https://example.com/kanz-atfaal

@@ -1,11 +1,14 @@
 ---
-title: "مثال على مقال من المدونة الشخصية"
+title: مثال على مقال من المدونة الشخصية
 date: 2025-03-20
-description: "هذا مثال توضيحي لمقال يُستورد من مدونة armalqaddaaree"
-tags: [فقه, أصول, عقيدة]
-source: "armalqaddaaree"
-language: "ar"
-sourceUrl: "https://armalqaddaaree.blogspot.com/2025/03/example.html"
+description: هذا مثال توضيحي لمقال يُستورد من مدونة armalqaddaaree
+tags:
+  - فقه
+  - أصول
+  - عقيدة
+source: armalqaddaaree
+language: ar
+sourceUrl: https://armalqaddaaree.blogspot.com/2025/03/example.html
 ---
 
 ## مقدمة
