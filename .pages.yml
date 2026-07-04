@@ -14,7 +14,6 @@ collections:
   - name: books
     path: books
     pattern: '**/*.md'
-    slug: "{{title | slug}}"
     fields:
       - name: title
         type: string
@@ -46,7 +45,6 @@ collections:
   - name: apps
     path: apps
     pattern: '**/*.md'
-    slug: "{{title | slug}}"
     fields:
       - name: title
         type: string
@@ -93,7 +91,6 @@ collections:
   - name: articles
     path: articles
     pattern: '**/*.md'
-    slug: "{{title | slug}}"
     fields:
       - name: title
         type: string
