@@ -1,0 +1,36 @@
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 · Built with Astro · Hosted on Vercel</p>
+    <div class="social-links">
+      <a href="#">GitHub</a>
+      <a href="#">Twitter</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    border-top: 1px solid var(--color-border);
+    padding: var(--space-md) 0;
+    margin-top: var(--space-lg);
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-sm);
+    margin-top: 0.25rem;
+  }
+  .social-links a {
+    text-decoration: none;
+    color: var(--color-text);
+    border-bottom: 1px solid transparent;
+  }
+  .social-links a:hover {
+    border-bottom-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+</style>

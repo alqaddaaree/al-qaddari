@@ -1,0 +1,409 @@
+---
+import PageLayout from '../../components/layout/PageLayout.astro';
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const books = await getCollection('books');
+  return books.map((book) => ({
+    params: { slug: book.id.replace(/\.md$/, '') },
+    props: { book },
+  }));
+}
+
+const { book } = Astro.props as { book: CollectionEntry<'books'> };
+
+// Build dynamic share URLs
+const siteUrl = import.meta.env.SITE || 'https://al-qaddari.com';
+const pageUrl = `${siteUrl}/books/${book.id.replace(/\.md$/, '')}`;
+const shareText = `📖 ${book.data.title} — ${book.data.author}`;
+---
+
+<PageLayout title={`${book.data.title} — عبد الرحمن القداري`} description={book.data.description}>
+  <div class="book-detail">
+    <div class="book-detail-header">
+      <a href="/books" class="back-link">← العودة إلى قائمة الكتب</a>
+    </div>
+
+    <div class="book-detail-content">
+      <div class="book-detail-main">
+        <div class="book-detail-icon">
+          <span class="book-detail-icon-symbol">📖</span>
+        </div>
+
+        <h1 class="book-detail-title">{book.data.title}</h1>
+        <p class="book-detail-author">{book.data.author}</p>
+
+        {book.data.date && (
+          <p class="book-detail-date">
+            تاريخ الإصدار: <span>{new Date(book.data.date).toLocaleDateString('ar-EG', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+          </p>
+        )}
+
+        <div class="book-detail-description">
+          <p>{book.data.description}</p>
+        </div>
+
+        {book.data.tags && book.data.tags.length > 0 && (
+          <div class="book-detail-tags">
+            <span class="tags-label">الوسوم:</span>
+            {book.data.tags.map((tag: string) => (
+              <span class="tag">{tag}</span>
+            ))}
+          </div>
+        )}
+
+        <div class="book-detail-download">
+          <a href={book.data.file} target="_blank" rel="noopener noreferrer" class="download-btn">
+            <span class="download-icon">📄</span>
+            تحميل الكتاب (PDF)
+          </a>
+          <p class="download-note">سيتم فتح الرابط في نافذة جديدة</p>
+        </div>
+      </div>
+
+      <aside class="book-detail-sidebar">
+        <div class="sidebar-card">
+          <h3 class="sidebar-title">معلومات الكتاب</h3>
+          <ul class="sidebar-info">
+            <li>
+              <span class="info-label">العنوان</span>
+              <span class="info-value">{book.data.title}</span>
+            </li>
+            <li>
+              <span class="info-label">المؤلف</span>
+              <span class="info-value">{book.data.author}</span>
+            </li>
+            {book.data.date && (
+              <li>
+                <span class="info-label">تاريخ الإصدار</span>
+                <span class="info-value">{new Date(book.data.date).toLocaleDateString('ar-EG', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+              </li>
+            )}
+            {book.data.tags && book.data.tags.length > 0 && (
+              <li>
+                <span class="info-label">الوسوم</span>
+                <span class="info-value">{book.data.tags.join('، ')}</span>
+              </li>
+            )}
+            <li>
+              <span class="info-label">الصيغة</span>
+              <span class="info-value">PDF</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card sidebar-card-share">
+          <h3 class="sidebar-title">مشاركة</h3>
+          <p class="sidebar-share-text">انشر هذا الكتاب لتعم الفائدة</p>
+          <div class="share-links">
+            <a href={`https://t.me/share/url?url=${encodeURIComponent(pageUrl)}&text=${encodeURIComponent(shareText)}`} target="_blank" rel="noopener" class="share-link telegram">تيليجرام</a>
+            <a href={`mailto:?subject=${encodeURIComponent(shareText)}&body=${encodeURIComponent('اطّلع على هذا الكتاب:\n' + pageUrl)}`} target="_blank" rel="noopener" class="share-link email">البريد الإلكتروني</a>
+            <a href={`https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + '\n' + pageUrl)}`} target="_blank" rel="noopener" class="share-link whatsapp">واتساب</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</PageLayout>
+
+<style>
+  .book-detail {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .book-detail-header {
+    margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+  }
+
+  .back-link {
+    font-family: var(--font-arabic-body);
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    color: var(--color-accent);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: color 0.15s;
+  }
+
+  .back-link:hover {
+    color: var(--color-accent-dark);
+  }
+
+  .book-detail-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: clamp(2rem, 4vw, 3.5rem);
+    align-items: start;
+  }
+
+  .book-detail-main {
+    background: #ffffff;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+  }
+
+  .book-detail-icon {
+    width: clamp(3.5rem, 5vw, 5rem);
+    height: clamp(4.5rem, 7vw, 6.5rem);
+    background: #f0fdfa;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccfbf1;
+    margin-bottom: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  .book-detail-icon-symbol {
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    line-height: 1;
+  }
+
+  .book-detail-title {
+    font-family: var(--font-arabic-heading);
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    color: var(--color-accent-dark);
+    margin: 0 0 0.2rem 0;
+    line-height: 1.3;
+  }
+
+  .book-detail-author {
+    font-family: var(--font-arabic-body);
+    font-size: clamp(1rem, 1.6vw, 1.2rem);
+    color: var(--color-text-light);
+    margin: 0 0 0.6rem 0;
+  }
+
+  .book-detail-date {
+    font-family: var(--font-arabic-body);
+    font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+    color: var(--color-text-light);
+    margin: 0 0 1.2rem 0;
+  }
+
+  .book-detail-date span {
+    color: var(--color-text);
+  }
+
+  .book-detail-description {
+    font-family: var(--font-arabic-body);
+    font-size: clamp(1rem, 1.6vw, 1.15rem);
+    line-height: 2;
+    color: var(--color-text);
+    margin-bottom: clamp(1.2rem, 2vw, 1.8rem);
+    padding: clamp(1rem, 2vw, 1.5rem);
+    background: #f9fafb;
+    border-radius: 6px;
+    border-right: 4px solid var(--color-accent);
+  }
+
+  .book-detail-description p {
+    margin: 0;
+  }
+
+  .book-detail-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: clamp(1.5rem, 2.5vw, 2rem);
+  }
+
+  .tags-label {
+    font-family: var(--font-arabic-body);
+    font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+    color: var(--color-text-light);
+    margin-left: 0.3rem;
+  }
+
+  .book-detail-tags .tag {
+    font-family: var(--font-arabic-body);
+    font-size: 0.75rem;
+    background: #f0fdfa;
+    color: var(--color-accent-dark);
+    padding: 0.1rem 0.7rem;
+    border-radius: 4px;
+    border: 1px solid #ccfbf1;
+  }
+
+  .book-detail-download {
+    margin-top: clamp(0.5rem, 1vw, 1rem);
+    padding-top: clamp(1rem, 2vw, 1.5rem);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background-color: var(--color-accent);
+    color: #ffffff;
+    text-decoration: none;
+    padding: clamp(0.7rem, 1.2vw, 0.9rem) clamp(1.5rem, 3vw, 2.5rem);
+    font-size: clamp(1rem, 1.4vw, 1.15rem);
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.2s, transform 0.1s;
+    font-family: var(--font-arabic-heading);
+    border: none;
+  }
+
+  .download-btn:hover {
+    background-color: var(--color-accent-dark);
+    color: #ffffff;
+  }
+
+  .download-btn:active {
+    transform: scale(0.97);
+  }
+
+  .download-icon {
+    font-size: 1.2em;
+    line-height: 1;
+  }
+
+  .download-note {
+    font-family: var(--font-arabic-body);
+    font-size: clamp(0.75rem, 1vw, 0.85rem);
+    color: var(--color-text-light);
+    margin: 0.4rem 0 0 0;
+  }
+
+  /* ─── Sidebar ─── */
+  .book-detail-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 2vw, 2rem);
+  }
+
+  .sidebar-card {
+    background: #ffffff;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: clamp(1.25rem, 2vw, 1.75rem);
+  }
+
+  .sidebar-title {
+    font-family: var(--font-arabic-heading);
+    font-size: clamp(1rem, 1.4vw, 1.15rem);
+    color: var(--color-accent-dark);
+    margin: 0 0 clamp(0.75rem, 1vw, 1rem) 0;
+    border-bottom: 1px solid #e0f2f1;
+    padding-bottom: 0.5rem;
+  }
+
+  .sidebar-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sidebar-info li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0;
+    font-family: var(--font-arabic-body);
+    font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+    border-bottom: 1px solid #f3f4f6;
+  }
+
+  .sidebar-info li:last-child {
+    border-bottom: none;
+  }
+
+  .info-label {
+    color: var(--color-text-light);
+    font-weight: 400;
+  }
+
+  .info-value {
+    color: var(--color-text);
+    font-weight: 500;
+    text-align: left;
+  }
+
+  .sidebar-card-share {
+    background: #f0fdfa;
+    border-color: #ccfbf1;
+  }
+
+  .sidebar-share-text {
+    font-family: var(--font-arabic-body);
+    font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+    color: var(--color-text-light);
+    margin: 0 0 0.75rem 0;
+  }
+
+  .share-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .share-link {
+    font-family: var(--font-arabic-heading);
+    font-size: clamp(0.8rem, 1vw, 0.9rem);
+    padding: 0.3rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: opacity 0.15s;
+  }
+
+  .share-link:hover {
+    opacity: 0.8;
+  }
+
+  .share-link.telegram {
+    background: #0088cc;
+    color: #ffffff;
+  }
+
+  .share-link.email {
+    background: #6c757d;
+    color: #ffffff;
+  }
+
+  .share-link.whatsapp {
+    background: #25d366;
+    color: #ffffff;
+  }
+
+  @media (max-width: 800px) {
+    .book-detail-content {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .book-detail-sidebar {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .sidebar-card {
+      flex: 1;
+      min-width: 200px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .book-detail-main {
+      padding: 1rem;
+    }
+
+    .book-detail-description {
+      padding: 0.75rem;
+    }
+
+    .book-detail-sidebar {
+      flex-direction: column;
+    }
+
+    .sidebar-card {
+      min-width: unset;
+    }
+  }
+</style>

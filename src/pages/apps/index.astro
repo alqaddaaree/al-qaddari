@@ -1,0 +1,240 @@
+---
+import PageLayout from '../../components/layout/PageLayout.astro';
+import { getCollection } from 'astro:content';
+import AppCard from '../../components/ui/AppCard.astro';
+
+const allApps = await getCollection('apps');
+
+// Group by type
+const pwaApps = allApps.filter((a) => a.data.type === 'pwa');
+const websiteApps = allApps.filter((a) => a.data.type === 'website');
+---
+
+<PageLayout title="التطبيقات — عبد الرحمن القداري" description="مشاريع وتطبيقات رقمية متنوعة">
+  <div class="apps-page">
+    <header class="page-header">
+      <h1 class="page-title">المشاريع الرقمية</h1>
+      <p class="page-intro">تطبيقات ومواقع إلكترونية بُنيت لخدمة العلم والتعلم</p>
+      <p class="result-count">{allApps.length} مشروع</p>
+    </header>
+
+    <!-- Filter Chips -->
+    <div class="filter-section">
+      <div class="filter-group">
+        <span class="filter-label">النوع</span>
+        <div class="chips">
+          <button class="chip active" data-type="all">الكل</button>
+          <button class="chip" data-type="pwa">تطبيقات PWA</button>
+          <button class="chip" data-type="website">مواقع</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">التصنيف</span>
+        <div class="chips">
+          <button class="chip active" data-category="all">الكل</button>
+          <button class="chip" data-category="تعليمي">تعليمي</button>
+          <button class="chip" data-category="نشر">نشر</button>
+          <button class="chip" data-category="مجتمعي">مجتمعي</button>
+          <button class="chip" data-category="أداة">أداة</button>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- PWAs Section -->
+    {pwaApps.length > 0 && (
+      <section class="project-section" data-type="pwa">
+        <h2 class="section-title">تطبيقات PWA</h2>
+        <div class="card-grid">
+          {pwaApps.map((app) => (
+            <AppCard app={app} />
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Websites Section -->
+    {websiteApps.length > 0 && (
+      <section class="project-section" data-type="website">
+        <h2 class="section-title">مواقع إلكترونية</h2>
+        <div class="card-grid">
+          {websiteApps.map((app) => (
+            <AppCard app={app} />
+          ))}
+        </div>
+      </section>
+    )}
+  </div>
+</PageLayout>
+
+<style>
+  .apps-page {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .page-header {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #e0f2f1;
+    padding-bottom: 1rem;
+  }
+
+  .page-title {
+    font-family: var(--font-arabic-heading);
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    color: var(--color-accent-dark);
+    margin: 0 0 0.5rem 0;
+  }
+
+  .page-intro {
+    font-family: var(--font-arabic-body);
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
+    color: var(--color-text-light);
+    max-width: 42rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .result-count {
+    font-family: var(--font-arabic-body);
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    margin: 0;
+  }
+
+  .filter-section {
+    margin: 1.5rem 0 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .filter-label {
+    font-family: var(--font-arabic-body);
+    font-size: 0.8rem;
+    color: var(--color-text-light);
+  }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .chip {
+    font-family: var(--font-arabic-body);
+    font-size: 0.8rem;
+    padding: 0.25rem 0.9rem;
+    border-radius: 20px;
+    border: 1px solid var(--color-border);
+    background: transparent;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .chip:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+
+  .chip.active {
+    background: var(--color-accent);
+    color: #fff;
+    border-color: var(--color-accent);
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--color-border);
+    margin: 2rem 0;
+  }
+
+  .project-section {
+    margin-bottom: 3rem;
+  }
+
+  .section-title {
+    font-family: var(--font-arabic-heading);
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    color: var(--color-text);
+    margin: 0 0 1.5rem 0;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 600px) {
+    .filter-section {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .card-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<script>
+  // Filter functionality
+  const chips = document.querySelectorAll('.chip');
+  const sections = document.querySelectorAll('.project-section');
+
+  // Get type chips and category chips
+  const typeChips = document.querySelectorAll('.filter-group:first-child .chip');
+  const categoryChips = document.querySelectorAll('.filter-group:last-child .chip');
+
+  // We'll implement both filters
+  let activeType = 'all';
+  let activeCategory = 'all';
+
+  function applyFilters() {
+    sections.forEach(section => {
+      const type = section.dataset.type;
+      const cards = section.querySelectorAll('.app-card');
+      let showSection = (activeType === 'all' || activeType === type);
+      if (showSection) {
+        // Check each card's category
+        cards.forEach(card => {
+          const category = card.dataset.category || ''; // we need to add category to AppCard
+          const show = (activeCategory === 'all' || category === activeCategory);
+          card.style.display = show ? '' : 'none';
+        });
+        // Check if any card is visible
+        const anyVisible = Array.from(cards).some(c => c.style.display !== 'none');
+        section.style.display = anyVisible ? '' : 'none';
+      } else {
+        section.style.display = 'none';
+      }
+    });
+  }
+
+  // Type chips
+  typeChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      typeChips.forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      activeType = chip.dataset.type;
+      applyFilters();
+    });
+  });
+
+  // Category chips
+  categoryChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      categoryChips.forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      activeCategory = chip.dataset.category;
+      applyFilters();
+    });
+  });
+</script>

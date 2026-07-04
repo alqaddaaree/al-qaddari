@@ -1,0 +1,33 @@
+---
+import Navigation from './Navigation.astro';
+---
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="site-title">عبد الرحمن القداري</a>
+    <Navigation />
+  </div>
+</header>
+
+<style>
+  .site-header {
+    padding: var(--space-md) 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .site-header .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .site-title {
+    font-family: var(--font-arabic-heading);
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--color-text);
+  }
+  .site-title:hover {
+    color: var(--color-accent);
+  }
+</style>

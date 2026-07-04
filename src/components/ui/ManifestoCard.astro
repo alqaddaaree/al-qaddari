@@ -1,0 +1,76 @@
+<section class="manifesto-section">
+  <div class="container">
+    <div class="manifesto-card">
+      <h2>بريق الأمل</h2>
+      <div class="manifesto-text">
+        <p>
+          ولكن، والحمد للّه، يعجبني أمر المشايخ والعلماء الذين يكتفون بإنشاء مواقع خاصة بهم، يتحكمون فيها كيف شاؤوا. وقد تطورت الوسائل ولدينا من الشباب المختصين في البرمجة والآليات والبرامج ما يمكننا من الاستغناء عن مواقع الفجور.
+        </p>
+        <div class="creed-list">
+          <p><span class="ornament">✦</span> تطبيقٌ يحقق أمر النبي — صلى اللّه عليه وسلم — في مخالفة الكفار وعدم التشبه بهم</p>
+          <p><span class="ornament">✦</span> ليس فيه ارتكاب الكبائر، ولا ابتداع فيه</p>
+          <p><span class="ornament">✦</span> ويُصَفّي متبعي الهوى ومحبي الظهور</p>
+          <p><span class="ornament">✦</span> تطبيقٌ على نهج الكتاب، والسنة، والسلف الصالح</p>
+        </div>
+        <div class="source-citation">
+          — من رسالة «بزوغ ضياء الفجر الوضاء»
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .manifesto-section {
+    padding: var(--space-lg) 0;
+    background-color: var(--color-bg);
+  }
+  .manifesto-card {
+    border-top: 6px solid var(--color-accent);
+    background: var(--color-bg-subtle);
+    padding: var(--space-md);
+    border-radius: var(--card-radius);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+  }
+  .manifesto-card h2 {
+    font-family: var(--font-arabic-heading);
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+    font-size: 2rem;
+  }
+  .manifesto-text p {
+    font-family: var(--font-arabic-body);
+    font-size: 1.15rem;
+    line-height: 1.9;
+    margin-bottom: var(--space-sm);
+  }
+  .creed-list {
+    background: #f4fafa;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--card-radius);
+    margin: var(--space-sm) 0;
+  }
+  .creed-list p {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+  .creed-list .ornament {
+    color: var(--color-accent-dark);
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  .source-citation {
+    font-family: var(--font-arabic-body);
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    text-align: left; /* RTL but we want it on the left side */
+    margin-top: var(--space-sm);
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-sm);
+  }
+  @media (max-width: 600px) {
+    .creed-list p { flex-wrap: wrap; }
+  }
+</style>

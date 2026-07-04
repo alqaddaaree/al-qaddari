@@ -1,0 +1,36 @@
+<nav>
+  <ul class="nav-links">
+    <li><a href="/books">الكتب</a></li>
+    <li><a href="/apps">التطبيقات</a></li>
+    <li><a href="/articles">المقالات</a></li>
+    <li><a href="/about">نبذة</a></li>
+  </ul>
+</nav>
+
+<style>
+  .nav-links {
+    display: flex;
+    gap: var(--space-md);
+    list-style: none;
+    font-family: var(--font-arabic-heading);
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: var(--color-text);
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.15s;
+    padding-bottom: 0.1rem;
+  }
+  .nav-links a:hover {
+    border-bottom-color: var(--color-accent);
+    color: var(--color-text);
+  }
+  @media (max-width: 600px) {
+    .nav-links {
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+    }
+  }
+</style>

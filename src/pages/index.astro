@@ -1,17 +1,477 @@
 ---
+import PageLayout from '../components/layout/PageLayout.astro';
+import { getCollection } from 'astro:content';
 
+
+// Get all content for the feed
+const allBooks = await getCollection('books');
+const allApps = await getCollection('apps');
+const allArticles = await getCollection('articles');
+
+// Get latest 3 of each for the updates feed
+const latestBooks = allBooks
+  .filter((b) => b.data.date)
+  .sort((a, b) => b.data.date!.valueOf() - a.data.date!.valueOf())
+  .slice(0, 3);
+
+const latestApps = allApps
+  .filter((a) => a.data.date)
+  .sort((a, b) => b.data.date!.valueOf() - a.data.date!.valueOf())
+  .slice(0, 3);
+
+const latestArticles = allArticles
+  .filter((a) => !a.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 3);
+
+// Combine and sort all content by date for the updates feed
+const allContent = [
+  ...latestBooks.map((item) => ({ ...item, type: 'كتاب' })),
+  ...latestApps.map((item) => ({ ...item, type: 'تطبيق' })),
+  ...latestArticles.map((item) => ({ ...item, type: 'مقال' })),
+].sort((a, b) => {
+  const dateA = a.data.date ? new Date(a.data.date).getTime() : 0;
+  const dateB = b.data.date ? new Date(b.data.date).getTime() : 0;
+  return dateB - dateA;
+});
+
+// Recommendations (featured items)
+const featuredBooks = allBooks.filter((b) => b.data.featured).slice(0, 3);
+const featuredApps = allApps.filter((a) => a.data.featured).slice(0, 3);
+const recommendations = [...featuredBooks, ...featuredApps];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<PageLayout title="الرئيسية — عبد الرحمن القداري" description="موقع الباحث والمحقق عبد الرحمن القداري">
+  <div class="homepage">
+
+    <!-- ─── Manifesto Card ─── -->
+    <section class="manifesto-section">
+      <div class="manifesto-card">
+        <div class="manifesto-header">
+          <h2 class="manifesto-title">بريق الأمل</h2>
+          <span class="manifesto-subtitle">بيان المانيفستو</span>
+        </div>
+        <div class="manifesto-body">
+          <p class="manifesto-text">
+            ولكن، والحمد للّه، يعجبني أمر المشايخ والعلماء الذين يكتفون بإنشاء مواقع خاصة بهم، يتحكمون فيها كيف شاؤوا. وقد تطورت الوسائل ولدينا من الشباب المختصين في البرمجة والآليات والبرامج ما يمكننا من الاستغناء عن مواقع الفجور.
+          </p>
+          <div class="manifesto-creed">
+            <ul class="creed-list">
+              <li>تطبيقٌ يحقق أمر النبي — صلى اللّه عليه وسلم — في مخالفة الكفار وعدم التشبه بهم</li>
+              <li>ليس فيه ارتكاب الكبائر، ولا ابتداع فيه</li>
+              <li>يُصَفّي متبعي الهوى ومحبي الظهور</li>
+              <li>تطبيقٌ على نهج الكتاب، والسنة، والسلف الصالح</li>
+            </ul>
+          </div>
+          <p class="manifesto-source">— مستخرج من رسالة: «بزوغ ضياء الفجر الوضاء»</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Latest Updates Feed ─── -->
+    <section class="feed-section">
+      <div class="feed-header">
+        <h2 class="feed-title">آخر المضافات والمستجدات</h2>
+        <span class="feed-accent"></span>
+      </div>
+      <div class="feed-container">
+        {allContent.length === 0 ? (
+          <p class="empty-message">لا توجد إضافات حالياً</p>
+        ) : (
+          <div class="feed-list">
+            {allContent.slice(0, 6).map((item) => (
+              <div class="feed-item">
+                <span class="feed-badge" data-type={
+                  item.type === 'كتاب' ? 'book' :
+                  item.type === 'تطبيق' ? 'app' : 'article'
+                }>
+                  {item.type}
+                </span>
+                <a href={`/${item.type === 'كتاب' ? 'books' : item.type === 'تطبيق' ? 'apps' : 'articles'}/${item.id.replace(/\.md$/, '')}`} class="feed-link">
+                  {item.data.title}
+                </a>
+                <span class="feed-date">
+                  {item.data.date ? new Date(item.data.date).toLocaleDateString('ar-EG', { year: 'numeric', month: 'long', day: 'numeric' }) : ''}
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </section>
+
+    <!-- ─── Recommendations Grid ─── -->
+    <section class="recommendations-section">
+      <h2 class="recommendations-title">ترشيحات وتوصيات نافعة</h2>
+      <div class="recommendations-grid">
+        {recommendations.length === 0 ? (
+          <p class="empty-message">لا توجد توصيات حالياً</p>
+        ) : (
+          recommendations.map((item) => {
+            const type = item.collection;
+            const slug = item.id.replace(/\.md$/, '');
+            const isBook = type === 'books';
+            return (
+              <div class="recommendation-card">
+                <a href={`/${type}/${slug}`} class="rec-link">
+                  <div class="rec-content">
+                    <div class="rec-header">
+                      <span class="rec-tag" data-type={type}>
+                        {isBook ? '📖 كتاب نافع' : '📱 برمجيات مفيدة'}
+                      </span>
+                      {item.data.featured && <span class="rec-featured">مميّز</span>}
+                    </div>
+                    <h3 class="rec-title">{item.data.title}</h3>
+                    <p class="rec-description">{item.data.description}</p>
+                    <span class="rec-action">
+                      {isBook ? 'مطالعة المادة الشرعية ←' : 'تجربة التطبيق ←'}
+                    </span>
+                  </div>
+                </a>
+              </div>
+            );
+          })
+        )}
+      </div>
+    </section>
+
+  </div>
+</PageLayout>
+
+<style>
+  .homepage {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* ─── Manifesto Card ─── */
+  .manifesto-section {
+    margin-bottom: clamp(2.5rem, 5vw, 4rem);
+  }
+
+  .manifesto-card {
+    background: #ffffff;
+    border: 1px solid var(--color-border);
+    border-top: 4px solid var(--color-accent);
+    border-radius: 8px;
+    padding: clamp(1.5rem, 3vw, 2.5rem);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  }
+
+  .manifesto-header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .manifesto-title {
+    font-family: var(--font-arabic-heading);
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    color: var(--color-accent-dark);
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .manifesto-subtitle {
+    font-family: var(--font-arabic-body);
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    color: var(--color-text-light);
+  }
+
+  .manifesto-text {
+    font-family: var(--font-arabic-body);
+    font-size: clamp(1rem, 1.6vw, 1.2rem);
+    line-height: 2;
+    color: var(--color-text);
+    margin: 0 0 1.5rem 0;
+  }
+
+  .manifesto-creed {
+    background: #f4fafa;
+    border-radius: 6px;
+    padding: clamp(1rem, 2vw, 1.5rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .creed-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .creed-list li {
+    font-family: var(--font-arabic-body);
+    font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+    line-height: 1.9;
+    color: var(--color-text);
+    padding-right: 1.8rem;
+    position: relative;
+    margin-bottom: 0.4rem;
+  }
+
+  .creed-list li::before {
+    content: '✦';
+    color: var(--color-accent);
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1rem;
+  }
+
+  .creed-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .manifesto-source {
+    font-family: var(--font-arabic-body);
+    font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+    color: var(--color-text-light);
+    margin: 0;
+    text-align: left;
+  }
+
+  /* ─── Feed Section ─── */
+  .feed-section {
+    margin-bottom: clamp(2.5rem, 5vw, 4rem);
+  }
+
+  .feed-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .feed-title {
+    font-family: var(--font-arabic-heading);
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    color: var(--color-text);
+    margin: 0;
+  }
+
+  .feed-accent {
+    flex: 0 0 4px;
+    height: 2rem;
+    background: var(--color-accent-dark);
+    border-radius: 2px;
+  }
+
+  .feed-container {
+    background: #f9fafb;
+    border-radius: 8px;
+    padding: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  .feed-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .feed-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    transition: background 0.15s;
+    flex-wrap: wrap;
+  }
+
+  .feed-item:hover {
+    background: #f0f0f0;
+  }
+
+  .feed-badge {
+    font-family: var(--font-arabic-body);
+    font-size: 0.65rem;
+    padding: 0.1rem 0.6rem;
+    border-radius: 4px;
+    background: #e0f2f1;
+    color: var(--color-accent-dark);
+    border: 1px solid #ccfbf1;
+    white-space: nowrap;
+  }
+
+  .feed-badge[data-type="book"] {
+    background: #fef3c7;
+    border-color: #f59e0b;
+    color: #92400e;
+  }
+
+  .feed-badge[data-type="app"] {
+    background: #dbeafe;
+    border-color: #60a5fa;
+    color: #1e40af;
+  }
+
+  .feed-badge[data-type="article"] {
+    background: #d1fae5;
+    border-color: #34d399;
+    color: #065f46;
+  }
+
+  .feed-link {
+    font-family: var(--font-arabic-body);
+    font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+    color: var(--color-text);
+    text-decoration: none;
+    flex: 1;
+    transition: color 0.15s;
+  }
+
+  .feed-link:hover {
+    color: var(--color-accent-dark);
+  }
+
+  .feed-date {
+    font-family: var(--font-arabic-body);
+    font-size: clamp(0.7rem, 1vw, 0.8rem);
+    color: var(--color-text-light);
+    white-space: nowrap;
+  }
+
+  .empty-message {
+    font-family: var(--font-arabic-body);
+    font-size: 1rem;
+    color: var(--color-text-light);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin: 0;
+  }
+
+  /* ─── Recommendations Grid ─── */
+  .recommendations-section {
+    margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+  }
+
+  .recommendations-title {
+    font-family: var(--font-arabic-heading);
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    color: var(--color-text);
+    margin: 0 0 1.5rem 0;
+  }
+
+  .recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .recommendation-card {
+    background: #ffffff;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    overflow: hidden;
+  }
+
+  .recommendation-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    border-color: var(--color-accent);
+  }
+
+  .rec-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: clamp(1.25rem, 2vw, 1.75rem);
+  }
+
+  .rec-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .rec-tag {
+    font-family: var(--font-arabic-body);
+    font-size: 0.7rem;
+    padding: 0.1rem 0.6rem;
+    border-radius: 4px;
+    border: 1px solid #ccfbf1;
+    background: #f0fdfa;
+    color: var(--color-accent-dark);
+  }
+
+  .rec-tag[data-type="books"] {
+    background: #f0fdfa;
+    border-color: #ccfbf1;
+    color: var(--color-accent-dark);
+  }
+
+  .rec-tag[data-type="apps"] {
+    background: #dbeafe;
+    border-color: #60a5fa;
+    color: #1e40af;
+  }
+
+  .rec-featured {
+    font-family: var(--font-arabic-body);
+    font-size: 0.65rem;
+    background: #fef3c7;
+    color: #92400e;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #f59e0b;
+  }
+
+  .rec-title {
+    font-family: var(--font-arabic-heading);
+    font-size: clamp(1.1rem, 1.8vw, 1.3rem);
+    color: var(--color-text);
+    margin: 0 0 0.3rem 0;
+    line-height: 1.4;
+  }
+
+  .recommendation-card:hover .rec-title {
+    color: var(--color-accent-dark);
+  }
+
+  .rec-description {
+    font-family: var(--font-arabic-body);
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    color: var(--color-text);
+    line-height: 1.7;
+    margin: 0 0 0.75rem 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .rec-action {
+    font-family: var(--font-arabic-heading);
+    font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+    color: var(--color-accent);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+    display: inline-block;
+  }
+
+  .recommendation-card:hover .rec-action {
+    border-bottom-color: var(--color-accent);
+  }
+
+  @media (max-width: 600px) {
+    .feed-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.25rem;
+    }
+
+    .feed-date {
+      align-self: flex-start;
+    }
+
+    .recommendations-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

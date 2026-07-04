@@ -1,0 +1,189 @@
+---
+import PageLayout from '../../components/layout/PageLayout.astro';
+import { getCollection } from 'astro:content';
+import ArticleCard from '../../components/ui/ArticleCard.astro';
+
+const allArticles = await getCollection('articles');
+
+// Filter out drafts in production
+const articles = allArticles.filter((a) => import.meta.env.PROD ? !a.data.draft : true);
+
+// Sort by date (newest first)
+articles.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+// Get unique sources for filter chips
+const sources = [...new Set(articles.map((a) => a.data.source))];
+
+// Source display names
+const sourceNames: Record<string, string> = {
+  'armalqaddaaree': 'المدونة الشخصية (عربي)',
+  'en-armalqaddaaree': 'المدونة الشخصية (إنجليزي)',
+  'al-albaanee': 'مدونة الألباني',
+  'scourgeofphotography': 'Scourge of Photography',
+  'raqmanat': 'رقمنات',
+  'islaamchildrenbooks': 'كتب إسلامية للأطفال',
+};
+---
+
+<PageLayout title="المقالات — عبد الرحمن القداري" description="مقالات وبحوث علمية متنوعة">
+  <div class="articles-page">
+    <header class="page-header">
+      <h1 class="page-title">المقالات والبحوث</h1>
+      <p class="page-intro">مقالات، فوائد، وبحوث علمية في مسائل متنوعة</p>
+      <p class="result-count">{articles.length} مقالة</p>
+    </header>
+
+    <!-- Source Filter -->
+    <div class="filter-section">
+      <div class="filter-group">
+        <span class="filter-label">المصدر</span>
+        <div class="chips">
+          <button class="chip active" data-filter="all">الكل</button>
+          {sources.map((source) => (
+            <button class="chip" data-filter={source}>{sourceNames[source] || source}</button>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    {articles.length === 0 ? (
+      <p class="empty-message">لا توجد مقالات حالياً</p>
+    ) : (
+      <div class="card-grid" id="article-grid">
+        {articles.map((article) => (
+          <ArticleCard article={article} />
+        ))}
+      </div>
+    )}
+  </div>
+</PageLayout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const chips = document.querySelectorAll('.chip');
+    const grid = document.getElementById('article-grid');
+    if (!grid) return;
+
+    chips.forEach((chip) => {
+      chip.addEventListener('click', function() {
+        // Update active state
+        chips.forEach((c) => c.classList.remove('active'));
+        this.classList.add('active');
+
+        const filter = this.dataset.filter;
+        const cards = grid.querySelectorAll('.article-card');
+
+        cards.forEach((card) => {
+          const source = card.dataset.source;
+          if (filter === 'all' || source === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+</script>
+
+<style>
+  .articles-page {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .page-header {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #e0f2f1;
+    padding-bottom: 1rem;
+  }
+
+  .page-title {
+    font-family: var(--font-arabic-heading);
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    color: var(--color-accent-dark);
+    margin: 0 0 0.5rem 0;
+  }
+
+  .page-intro {
+    font-family: var(--font-arabic-body);
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
+    color: var(--color-text-light);
+    max-width: 42rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .result-count {
+    font-family: var(--font-arabic-body);
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    margin: 0;
+  }
+
+  .filter-section {
+    margin: 1.5rem 0 2rem 0;
+  }
+
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .filter-label {
+    font-family: var(--font-arabic-body);
+    font-size: 0.8rem;
+    color: var(--color-text-light);
+  }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .chip {
+    font-family: var(--font-arabic-body);
+    font-size: 0.8rem;
+    padding: 0.25rem 0.9rem;
+    border-radius: 20px;
+    border: 1px solid var(--color-border);
+    background: transparent;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .chip:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+
+  .chip.active {
+    background: var(--color-accent);
+    color: #fff;
+    border-color: var(--color-accent);
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--color-border);
+    margin: 2rem 0;
+  }
+
+  .empty-message {
+    font-family: var(--font-arabic-body);
+    font-size: 1.1rem;
+    color: var(--color-text-light);
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+</style>

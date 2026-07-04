@@ -1,0 +1,80 @@
+---
+import PageLayout from '../../components/layout/PageLayout.astro';
+import { getCollection } from 'astro:content';
+import BookCard from '../../components/ui/BookCard.astro';
+
+const books = await getCollection('books');
+books.sort((a, b) => {
+  if (!a.data.date) return 1;
+  if (!b.data.date) return -1;
+  return b.data.date.valueOf() - a.data.date.valueOf();
+});
+---
+
+<PageLayout title="الكتب — عبد الرحمن القداري" description="قائمة الكتب والمؤلفات">
+  <div class="books-page">
+    <header class="page-header">
+      <h1 class="page-title">الكتب والمؤلفات</h1>
+      <p class="page-subtitle">مؤلفات وبحوث علمية في مسائل متنوعة</p>
+      <p class="result-count">{books.length} كتاب</p>
+    </header>
+
+    {books.length === 0 ? (
+      <p class="empty-message">لا توجد كتب حالياً</p>
+    ) : (
+      <div class="books-grid">
+        {books.map((book) => (
+          <BookCard book={book} />
+        ))}
+      </div>
+    )}
+  </div>
+</PageLayout>
+
+<style>
+  .books-page {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .page-header {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #e0f2f1;
+    padding-bottom: 1rem;
+  }
+
+  .page-title {
+    font-family: var(--font-arabic-heading);
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    color: var(--color-accent-dark);
+    margin: 0 0 0.25rem 0;
+  }
+
+  .page-subtitle {
+    font-family: var(--font-arabic-body);
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
+    color: var(--color-text-light);
+    margin: 0 0 0.25rem 0;
+  }
+
+  .result-count {
+    font-family: var(--font-arabic-body);
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    margin: 0;
+  }
+
+  .empty-message {
+    font-family: var(--font-arabic-body);
+    font-size: 1.1rem;
+    color: var(--color-text-light);
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  .books-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(1rem, 2vw, 1.5rem);
+  }
+</style>

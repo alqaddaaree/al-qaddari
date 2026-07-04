@@ -1,0 +1,152 @@
+---
+import BaseLayout from '../components/layout/BaseLayout.astro';
+---
+
+<BaseLayout title="الصفحة غير موجودة — عبد الرحمن القداري" description="عذراً، الصفحة التي تبحث عنها غير موجودة">
+  <div class="error-page">
+    <div class="container">
+      <div class="error-content">
+        <div class="error-icon">📖</div>
+        <h1 class="error-code">404</h1>
+        <h2 class="error-title">عذراً، الصفحة غير موجودة</h2>
+        <p class="error-message">
+          قد تكون الصفحة التي تبحث عنها قد نُقلت أو حُذفت، أو أن الرابط غير صحيح.
+        </p>
+        <div class="error-links">
+          <a href="/" class="error-btn primary">الرئيسية</a>
+          <a href="/books" class="error-btn">الكتب</a>
+          <a href="/apps" class="error-btn">التطبيقات</a>
+          <a href="/articles" class="error-btn">المقالات</a>
+          <a href="/about" class="error-btn">نبذة</a>
+        </div>
+        <p class="error-hint">
+          أو يمكنك <a href="/">العودة إلى الرئيسية</a> والبحث من هناك.
+        </p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .error-page {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-lg) 0;
+  }
+
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+    width: 100%;
+  }
+
+  .error-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .error-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .error-code {
+    font-family: var(--font-arabic-heading);
+    font-size: 6rem;
+    font-weight: 800;
+    color: var(--color-accent);
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 0.05em;
+  }
+
+  .error-title {
+    font-family: var(--font-arabic-heading);
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    color: var(--color-accent-dark);
+    margin: 0.5rem 0 1rem 0;
+  }
+
+  .error-message {
+    font-family: var(--font-arabic-body);
+    font-size: clamp(1rem, 1.6vw, 1.15rem);
+    color: var(--color-text-light);
+    line-height: 1.8;
+    margin: 0 0 2rem 0;
+  }
+
+  .error-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .error-btn {
+    font-family: var(--font-arabic-heading);
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+    background: #ffffff;
+    transition: all 0.15s;
+  }
+
+  .error-btn:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+
+  .error-btn.primary {
+    background: var(--color-accent);
+    color: #ffffff;
+    border-color: var(--color-accent);
+  }
+
+  .error-btn.primary:hover {
+    background: var(--color-accent-dark);
+    border-color: var(--color-accent-dark);
+    color: #ffffff;
+  }
+
+  .error-hint {
+    font-family: var(--font-arabic-body);
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    color: var(--color-text-light);
+    margin: 0;
+  }
+
+  .error-hint a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
+  .error-hint a:hover {
+    color: var(--color-accent-dark);
+  }
+
+  @media (max-width: 600px) {
+    .error-code {
+      font-size: 4rem;
+    }
+
+    .error-links {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .error-btn {
+      width: 100%;
+      max-width: 250px;
+      text-align: center;
+    }
+  }
+</style>
