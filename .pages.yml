@@ -1,19 +1,17 @@
-site: https://al-qaddari.vercel.app/
-
+site: https://al-qaddari.vercel.app
 storage:
   type: fs
   path: src/content
-
 media:
   type: fs
   path: public/uploads
   url: /uploads
-
-# collections:
-#   - name: books
-#     path: books
-#     pattern: '**/*.md'
-#     fields:
-#       - name: title
-#         type: string
-# ...
+collections:
+  - name: books
+    path: books
+    pattern: '*.md'
+    fields:
+      - title: string
+      - author: string
+      - description: string
+      - file: string
