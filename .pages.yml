@@ -1,21 +1,177 @@
-site: https://al-qaddari.vercel.app
-media:
-  output: public/uploads
-  path: /uploads
-collections:
+# .pages.yml
+content:
   - name: books
+    label: الكتب
+    type: collection
     path: src/content/books
-    pattern: '*.md'
+    extension: md
+    create: true
+    delete: true
     fields:
       - name: title
+        label: عنوان الكتاب
         type: string
-        label: Title
+        required: true
       - name: author
+        label: المؤلف
         type: string
-        label: Author
+        required: true
       - name: description
-        type: string
-        label: Description
+        label: وصف مختصر
+        type: text
+        required: true
+      - name: cover
+        label: غلاف الكتاب
+        type: image
+        required: false
       - name: file
+        label: رابط التحميل (URL)
         type: string
-        label: File
+        required: true
+      - name: date
+        label: تاريخ الإصدار
+        type: date
+        required: false
+      - name: tags
+        label: الوسوم
+        type: string
+        list: true
+        required: false
+      - name: featured
+        label: مميّز
+        type: boolean
+        default: false
+
+  - name: apps
+    label: التطبيقات
+    type: collection
+    path: src/content/apps
+    extension: md
+    create: true
+    delete: true
+    fields:
+      - name: title
+        label: اسم التطبيق
+        type: string
+        required: true
+      - name: description
+        label: وصف مختصر
+        type: text
+        required: true
+      - name: type
+        label: النوع
+        type: select
+        options:
+          values:
+            - label: تطبيق PWA
+              value: pwa
+            - label: موقع إلكتروني
+              value: website
+        required: true
+      - name: category
+        label: التصنيف
+        type: select
+        options:
+          values:
+            - label: تعليمي
+              value: تعليمي
+            - label: نشر
+              value: نشر
+            - label: مجتمعي
+              value: مجتمعي
+            - label: أداة
+              value: أداة
+            - label: أخرى
+              value: أخرى
+        required: true
+      - name: tags
+        label: الوسوم
+        type: string
+        list: true
+        required: false
+      - name: featured
+        label: مميّز
+        type: boolean
+        default: false
+      - name: image
+        label: صورة التطبيق
+        type: image
+        required: false
+      - name: url
+        label: رابط التطبيق
+        type: string
+        required: false
+      - name: note
+        label: ملاحظة إضافية
+        type: text
+        required: false
+      - name: date
+        label: تاريخ الإصدار
+        type: date
+        required: false
+
+  - name: articles
+    label: المقالات
+    type: collection
+    path: src/content/articles
+    extension: md
+    create: true
+    delete: true
+    fields:
+      - name: title
+        label: عنوان المقال
+        type: string
+        required: true
+      - name: date
+        label: تاريخ النشر
+        type: date
+        required: true
+      - name: description
+        label: وصف مختصر
+        type: text
+        required: true
+      - name: tags
+        label: الوسوم
+        type: string
+        list: true
+        required: false
+      - name: draft
+        label: مسودة
+        type: boolean
+        default: false
+      - name: source
+        label: المصدر
+        type: select
+        options:
+          values:
+            - label: المدونة الشخصية (عربي)
+              value: armalqaddaaree
+            - label: المدونة الشخصية (إنجليزي)
+              value: en-armalqaddaaree
+            - label: مدونة الألباني
+              value: al-albaanee
+            - label: Scourge of Photography
+              value: scourgeofphotography
+            - label: رقمنات
+              value: raqmanat
+            - label: كتب إسلامية للأطفال
+              value: islaamchildrenbooks
+        required: true
+      - name: language
+        label: اللغة
+        type: select
+        options:
+          values:
+            - label: العربية
+              value: ar
+            - label: الإنجليزية
+              value: en
+        default: ar
+      - name: sourceUrl
+        label: رابط المصدر الأصلي
+        type: string
+        required: false
+      - name: featured
+        label: مميّز
+        type: boolean
+        default: false
