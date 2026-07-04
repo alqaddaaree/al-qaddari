@@ -1,9 +1,9 @@
 site: https://al-qaddari.vercel.app
 storage:
-  type: fs
+  type: github
   path: src/content
 media:
-  type: fs
+  type: github
   path: public/uploads
   url: /uploads
 collections:
