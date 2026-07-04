@@ -1,43 +1,128 @@
-# Astro Starter Kit: Minimal
+# موقع عبد الرحمن القداري
 
-```sh
-npm create astro@latest -- --template minimal
+موقع شخصي وبحثي يُعنى بنشر الكتب المحققة، والتطبيقات الرقمية، والمقالات العلمية، وفق منهج السلف الصالح.  
+مبني باستخدام **Astro**، ويُدار محتواه عبر **Pages CMS**، ويُستضاف على **Vercel**.
+
+## 📦 التقنيات المستخدمة
+
+- [Astro](https://astro.build/) — الإطار الرئيسي.
+- [Pages CMS](https://pagescms.org/) — إدارة المحتوى.
+- [Vercel](https://vercel.com/) — النشر والاستضافة.
+- [Sharp](https://sharp.pixelplumbing.com/) — تحسين الصور.
+- [@astrojs/sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/) — خريطة الموقع التلقائية.
+
+---
+
+## 📂 هيكل المجلدات
+
+```
+src/
+├── components/
+│   ├── layout/               # التخطيطات العامة (Base, Page)
+│   └── ui/                   # مكونات قابلة لإعادة الاستخدام (بطاقات، تنقل، تذييل)
+├── content/
+│   ├── books/                # ملفات الكتب (Markdown)
+│   ├── apps/                 # ملفات التطبيقات (Markdown)
+│   ├── articles/             # ملفات المقالات (Markdown)
+│   └── pages/                # صفحات ثابتة (عن، تواصل)
+├── pages/
+│   ├── index.astro           # الصفحة الرئيسية
+│   ├── books/                # قائمة الكتب وتفاصيل كل كتاب
+│   ├── apps/                 # قائمة التطبيقات وتفاصيل كل تطبيق
+│   ├── articles/             # قائمة المقالات وتفاصيل كل مقال
+│   ├── about.astro           # صفحة "نبذة"
+│   └── 404.astro             # صفحة الخطأ 404
+├── styles/
+│   └── global.css            # الأنماط العامة (الخطوط، الألوان، التباعد)
+├── content.config.ts         # تعريف مجموعات المحتوى (كولكشن)
+└── astro.config.mjs          # إعدادات Astro (مع Sitemap)
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+## 📝 مجموعات المحتوى (Collections)
 
-Inside of your Astro project, you'll see the following folders and files:
+| المجموعة | المسار | الوصف |
+|----------|--------|--------|
+| **كتب** | `/books` | كتب محققة، مع رابط تحميل (PDF/Google Drive). |
+| **تطبيقات** | `/apps` | تطبيقات ويب ومواقع (PWA، مواقع). |
+| **مقالات** | `/articles` | مقالات وبحوث علمية (مع دعم المصادر المتعددة). |
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+### حقول كل مجموعة
+
+#### الكتب
+```yaml
+title: عنوان الكتاب
+author: المؤلف
+description: وصف مختصر
+file: رابط التحميل
+date: تاريخ الإصدار (اختياري)
+tags: [وسوم]
+featured: true/false (اختياري)
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+#### التطبيقات
+```yaml
+title: اسم التطبيق
+description: وصف مختصر
+type: pwa / website
+category: تعليمي / نشر / مجتمعي / أداة / أخرى
+tags: [وسوم]
+featured: true/false
+url: رابط التطبيق
+note: ملاحظة إضافية
+date: تاريخ الإصدار
+```
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+#### المقالات
+```yaml
+title: عنوان المقال
+date: تاريخ النشر
+description: وصف مختصر
+tags: [وسوم]
+draft: true/false
+source: armalqaddaaree / en-armalqaddaaree / al-albaanee / scourgeofphotography / raqmanat / islaamchildrenbooks
+language: ar / en
+sourceUrl: رابط المصدر الأصلي
+featured: true/false
+```
 
-Any static assets, like images, can be placed in the `public/` directory.
+---
 
-## 🧞 Commands
+## 🛠️ التطوير المحلي
 
-All commands are run from the root of the project, from a terminal:
+1. **استنساخ المشروع**
+   ```bash
+   git clone https://github.com/al-qaddaaree/al-qaddari.git
+   cd al-qaddari
+   ```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+2. **تثبيت الاعتماديات**
+   ```bash
+   npm install
+   ```
 
-## 👀 Want to learn more?
+3. **تشغيل خادم التطوير**
+   ```bash
+   npm run dev
+   ```
+   الموقع متاح على `http://localhost:4321`.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+4. **بناء الموقع للإنتاج**
+   ```bash
+   npm run build
+   ```
+
+5. **معاينة البناء**
+   ```bash
+   npm run preview
+   ```
+
+---
+
+## 📬 التواصل
+
+- البريد الإلكتروني: alqaddaaree@gmail.com
+
+**بُنِيَ هذا الموقع بنية اتباع منهج الكتاب والسنة وسلف الأمة الصالح.**  
+**والحمد لله رب العالمين.**
