@@ -1,17 +1,21 @@
 site: https://al-qaddari.vercel.app
-storage:
-  type: github
-  path: src/content
 media:
-  type: github
-  path: public/uploads
-  url: /uploads
+  output: public/uploads
+  path: /uploads
 collections:
   - name: books
-    path: books
+    path: src/content/books
     pattern: '*.md'
     fields:
-      - title: string
-      - author: string
-      - description: string
-      - file: string
+      - name: title
+        type: string
+        label: Title
+      - name: author
+        type: string
+        label: Author
+      - name: description
+        type: string
+        label: Description
+      - name: file
+        type: string
+        label: File
