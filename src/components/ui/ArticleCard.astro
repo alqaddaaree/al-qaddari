@@ -6,27 +6,30 @@ export interface Props {
 }
 const { article } = Astro.props;
 const slug = article.id.replace(/\.md$/, '');
+
+// Detect if content is English
+const isEnglish = article.data.language === 'en';
 ---
 
 <a href={`/articles/${slug}`} class="article-card" data-source={article.data.source}>
-  <div class="article-card-inner">
+  <div class="article-card-inner" dir={isEnglish ? 'ltr' : 'rtl'}>
     <div class="article-icon">
       <span class="article-icon-symbol">📝</span>
     </div>
     <div class="article-info">
-      <h3 class="article-title">{article.data.title}</h3>
+      <h3 class="article-title" style={isEnglish ? 'text-align: left;' : ''}>{article.data.title}</h3>
       <p class="article-date">
         {new Date(article.data.date).toLocaleDateString('ar-EG', { year: 'numeric', month: 'long', day: 'numeric' })}
       </p>
-      <p class="article-description">{article.data.description}</p>
+      <p class="article-description" style={isEnglish ? 'text-align: left;' : ''}>{article.data.description}</p>
       {article.data.tags && article.data.tags.length > 0 && (
-        <div class="article-tags">
+        <div class="article-tags" style={isEnglish ? 'justify-content: flex-start;' : ''}>
           {article.data.tags.slice(0, 3).map((tag) => (
             <span class="tag">{tag}</span>
           ))}
         </div>
       )}
-      <span class="article-link-hint">اطّلع على المقال →</span>
+      <span class="article-link-hint">{isEnglish ? 'Read Article →' : 'اطّلع على المقال →'}</span>
     </div>
   </div>
 </a>

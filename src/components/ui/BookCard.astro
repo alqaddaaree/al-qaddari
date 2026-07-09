@@ -6,25 +6,28 @@ export interface Props {
 }
 const { book } = Astro.props;
 const slug = book.id.replace(/\.md$/, '');
+
+// Detect if book is English (check if title contains Arabic characters)
+const isEnglish = !/[\u0600-\u06FF]/.test(book.data.title);
 ---
 
 <a href={`/books/${slug}`} class="book-card">
-  <div class="book-card-inner">
+  <div class="book-card-inner" dir={isEnglish ? 'ltr' : 'rtl'}>
     <div class="book-icon">
       <span class="book-icon-symbol">📖</span>
     </div>
     <div class="book-info">
-      <h3 class="book-title">{book.data.title}</h3>
-      <p class="book-author">— {book.data.author}</p>
-      <p class="book-description">{book.data.description}</p>
+      <h3 class="book-title" style={isEnglish ? 'text-align: left;' : ''}>{book.data.title}</h3>
+      <p class="book-author" style={isEnglish ? 'text-align: left;' : ''}>— {book.data.author}</p>
+      <p class="book-description" style={isEnglish ? 'text-align: left;' : ''}>{book.data.description}</p>
       {book.data.tags && book.data.tags.length > 0 && (
-        <div class="book-tags">
+        <div class="book-tags" style={isEnglish ? 'justify-content: flex-start;' : ''}>
           {book.data.tags.slice(0, 3).map((tag) => (
             <span class="tag">{tag}</span>
           ))}
         </div>
       )}
-      <span class="book-link-hint">اطّلع على الكتاب →</span>
+      <span class="book-link-hint">{isEnglish ? 'Read Book →' : 'اطّلع على الكتاب →'}</span>
     </div>
   </div>
 </a>

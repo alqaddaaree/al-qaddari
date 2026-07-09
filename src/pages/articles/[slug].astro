@@ -27,22 +27,25 @@ const sourceNames: Record<string, string> = {
   'en-armalqaddaaree': 'المدونة الشخصية (إنجليزي)',
   'al-albaanee': 'مدونة الألباني',
   'scourgeofphotography': 'Scourge of Photography',
-  'raqmanat': 'رقمنة',
+  'raqmanat': 'رقمنات',
   'islaamchildrenbooks': 'كتب إسلامية للأطفال',
 };
+
+// Detect if content is English (for LTR)
+const isEnglish = article.data.language === 'en';
 ---
 
 <PageLayout title={`${article.data.title} — عبد الرحمن القداري`} description={article.data.description}>
-  <div class="article-detail">
+  <div class="article-detail" dir={isEnglish ? 'ltr' : 'rtl'}>
     <div class="article-detail-header">
       <a href="/articles" class="back-link">← العودة إلى قائمة المقالات</a>
     </div>
 
-    <div class="article-detail-content">
+    <div class="article-detail-content" style={isEnglish ? 'direction: ltr; text-align: left;' : ''}>
       <div class="article-detail-main">
         <div class="article-meta">
-          <h1 class="article-detail-title">{article.data.title}</h1>
-          <div class="article-detail-info">
+          <h1 class="article-detail-title" style={isEnglish ? 'text-align: left;' : ''}>{article.data.title}</h1>
+          <div class="article-detail-info" style={isEnglish ? 'flex-direction: row; justify-content: flex-start;' : ''}>
             <span class="article-detail-date">
               {new Date(article.data.date).toLocaleDateString('ar-EG', { year: 'numeric', month: 'long', day: 'numeric' })}
             </span>
@@ -51,7 +54,7 @@ const sourceNames: Record<string, string> = {
             </span>
           </div>
           {article.data.tags && article.data.tags.length > 0 && (
-            <div class="article-detail-tags">
+            <div class="article-detail-tags" style={isEnglish ? 'justify-content: flex-start;' : ''}>
               {article.data.tags.map((tag: string) => (
                 <span class="tag">{tag}</span>
               ))}
@@ -59,14 +62,14 @@ const sourceNames: Record<string, string> = {
           )}
         </div>
 
-        <div class="article-detail-body">
-          <article class="prose">
+        <div class="article-detail-body" style={isEnglish ? 'direction: ltr; text-align: left;' : ''}>
+          <article class="prose" style={isEnglish ? 'direction: ltr; text-align: left;' : ''}>
             <Content />
           </article>
         </div>
 
         {article.data.sourceUrl && (
-          <div class="article-detail-source-link">
+          <div class="article-detail-source-link" style={isEnglish ? 'text-align: left;' : ''}>
             <p>
               <span>📌 المصدر الأصلي: </span>
               <a href={article.data.sourceUrl} target="_blank" rel="noopener" class="source-link">
@@ -83,7 +86,7 @@ const sourceNames: Record<string, string> = {
           <ul class="sidebar-info">
             <li>
               <span class="info-label">العنوان</span>
-              <span class="info-value">{article.data.title}</span>
+              <span class="info-value" style={isEnglish ? 'text-align: left;' : ''}>{article.data.title}</span>
             </li>
             <li>
               <span class="info-label">التاريخ</span>
@@ -96,7 +99,7 @@ const sourceNames: Record<string, string> = {
             {article.data.tags && article.data.tags.length > 0 && (
               <li>
                 <span class="info-label">الوسوم</span>
-                <span class="info-value">{article.data.tags.join('، ')}</span>
+                <span class="info-value" style={isEnglish ? 'text-align: left;' : ''}>{article.data.tags.join('، ')}</span>
               </li>
             )}
             <li>
@@ -121,7 +124,7 @@ const sourceNames: Record<string, string> = {
 </PageLayout>
 
 <style>
-  /* ─── Scoped Styles ─── */
+  /* ─── All styles remain the same ─── */
   .article-detail {
     max-width: 100%;
     margin: 0 auto;
@@ -239,7 +242,6 @@ const sourceNames: Record<string, string> = {
     border: 1px solid #ccfbf1;
   }
 
-  /* ─── Article Body (Markdown) ─── */
   .article-detail-body {
     font-family: var(--font-arabic-body);
     font-size: clamp(1rem, 1.6vw, 1.15rem);
@@ -252,7 +254,6 @@ const sourceNames: Record<string, string> = {
     text-align: right;
   }
 
-  /* ─── Headings ─── */
   .article-detail-body .prose h2,
   .article-detail-body .prose h3,
   .article-detail-body .prose h4 {
@@ -273,7 +274,6 @@ const sourceNames: Record<string, string> = {
     margin-bottom: 1rem;
   }
 
-  /* ─── Blockquote ─── */
   .article-detail-body .prose blockquote {
     padding: 0.75rem 1.5rem;
     margin: 1rem 0;
@@ -310,7 +310,6 @@ const sourceNames: Record<string, string> = {
     color: var(--color-accent-dark);
   }
 
-  /* ─── Source Link ─── */
   .article-detail-source-link {
     margin-top: clamp(1.5rem, 2.5vw, 2rem);
     padding-top: clamp(1rem, 2vw, 1.5rem);
@@ -331,7 +330,6 @@ const sourceNames: Record<string, string> = {
     color: var(--color-accent-dark);
   }
 
-  /* ─── Sidebar ─── */
   .article-detail-sidebar {
     display: flex;
     flex-direction: column;

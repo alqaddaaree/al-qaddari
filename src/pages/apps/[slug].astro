@@ -17,15 +17,18 @@ const { app } = Astro.props as { app: CollectionEntry<'apps'> };
 const siteUrl = import.meta.env.SITE || 'https://al-qaddari.com';
 const pageUrl = `${siteUrl}/apps/${app.id.replace(/\.md$/, '')}`;
 const shareText = `📱 ${app.data.title}`;
+
+// Detect if app is English (based on title containing Latin characters)
+const isEnglish = !/[\u0600-\u06FF]/.test(app.data.title);
 ---
 
 <PageLayout title={`${app.data.title} — عبد الرحمن القداري`} description={app.data.description}>
-  <div class="app-detail">
+  <div class="app-detail" dir={isEnglish ? 'ltr' : 'rtl'}>
     <div class="app-detail-header">
       <a href="/apps" class="back-link">← العودة إلى قائمة التطبيقات</a>
     </div>
 
-    <div class="app-detail-content">
+    <div class="app-detail-content" style={isEnglish ? 'direction: ltr; text-align: left;' : ''}>
       <div class="app-detail-main">
         <div class="app-detail-icon">
           {app.data.image ? (
@@ -37,19 +40,19 @@ const shareText = `📱 ${app.data.title}`;
           )}
         </div>
 
-        <h1 class="app-detail-title">{app.data.title}</h1>
-        <p class="app-detail-type">
-          {app.data.type === 'pwa' ? 'تطبيق PWA' : 'موقع إلكتروني'}
-          {app.data.featured && <span class="featured-badge">مميّز</span>}
+        <h1 class="app-detail-title" style={isEnglish ? 'text-align: left;' : ''}>{app.data.title}</h1>
+        <p class="app-detail-type" style={isEnglish ? 'text-align: left;' : ''}>
+          {app.data.type === 'pwa' ? (isEnglish ? 'PWA App' : 'تطبيق PWA') : (isEnglish ? 'Website' : 'موقع إلكتروني')}
+          {app.data.featured && <span class="featured-badge">{isEnglish ? 'Featured' : 'مميّز'}</span>}
         </p>
 
-        <div class="app-detail-description">
+        <div class="app-detail-description" style={isEnglish ? 'direction: ltr; text-align: left; border-right: none; border-left: 4px solid var(--color-accent);' : ''}>
           <p>{app.data.description}</p>
         </div>
 
         {app.data.tags && app.data.tags.length > 0 && (
-          <div class="app-detail-tags">
-            <span class="tags-label">الوسوم:</span>
+          <div class="app-detail-tags" style={isEnglish ? 'justify-content: flex-start;' : ''}>
+            <span class="tags-label">{isEnglish ? 'Tags:' : 'الوسوم:'}</span>
             {app.data.tags.map((tag: string) => (
               <span class="tag">{tag}</span>
             ))}
@@ -57,57 +60,57 @@ const shareText = `📱 ${app.data.title}`;
         )}
 
         {app.data.note && (
-          <div class="app-detail-note">
+          <div class="app-detail-note" style={isEnglish ? 'direction: ltr; text-align: left; border-right: none; border-left: 3px solid var(--color-accent);' : ''}>
             <p>{app.data.note}</p>
           </div>
         )}
 
-        <div class="app-detail-action">
+        <div class="app-detail-action" style={isEnglish ? 'text-align: left;' : ''}>
           <a href={app.data.url || '#'} target="_blank" rel="noopener noreferrer" class="visit-btn">
             <span class="visit-icon">🚀</span>
-            زيارة التطبيق
+            {isEnglish ? 'Visit App' : 'زيارة التطبيق'}
           </a>
-          <p class="visit-note">سيتم فتح الرابط في نافذة جديدة</p>
+          <p class="visit-note">{isEnglish ? 'Link will open in a new tab' : 'سيتم فتح الرابط في نافذة جديدة'}</p>
         </div>
       </div>
 
       <aside class="app-detail-sidebar">
         <div class="sidebar-card">
-          <h3 class="sidebar-title">معلومات التطبيق</h3>
+          <h3 class="sidebar-title">{isEnglish ? 'App Information' : 'معلومات التطبيق'}</h3>
           <ul class="sidebar-info">
             <li>
-              <span class="info-label">العنوان</span>
-              <span class="info-value">{app.data.title}</span>
+              <span class="info-label">{isEnglish ? 'Title' : 'العنوان'}</span>
+              <span class="info-value" style={isEnglish ? 'text-align: left;' : ''}>{app.data.title}</span>
             </li>
             <li>
-              <span class="info-label">النوع</span>
-              <span class="info-value">{app.data.type === 'pwa' ? 'تطبيق PWA' : 'موقع إلكتروني'}</span>
+              <span class="info-label">{isEnglish ? 'Type' : 'النوع'}</span>
+              <span class="info-value">{app.data.type === 'pwa' ? (isEnglish ? 'PWA App' : 'تطبيق PWA') : (isEnglish ? 'Website' : 'موقع إلكتروني')}</span>
             </li>
             <li>
-              <span class="info-label">التصنيف</span>
+              <span class="info-label">{isEnglish ? 'Category' : 'التصنيف'}</span>
               <span class="info-value">{app.data.category}</span>
             </li>
             {app.data.tags && app.data.tags.length > 0 && (
               <li>
-                <span class="info-label">الوسوم</span>
-                <span class="info-value">{app.data.tags.join('، ')}</span>
+                <span class="info-label">{isEnglish ? 'Tags' : 'الوسوم'}</span>
+                <span class="info-value" style={isEnglish ? 'text-align: left;' : ''}>{app.data.tags.join('، ')}</span>
               </li>
             )}
             {app.data.featured && (
               <li>
-                <span class="info-label">الحالة</span>
-                <span class="info-value" style="color: #92400e; background: #fef3c7; padding: 0.1rem 0.6rem; border-radius: 4px;">مميّز</span>
+                <span class="info-label">{isEnglish ? 'Status' : 'الحالة'}</span>
+                <span class="info-value" style={{ color: '#92400e', background: '#fef3c7', padding: '0.1rem 0.6rem', borderRadius: '4px' }}>{isEnglish ? 'Featured' : 'مميّز'}</span>
               </li>
             )}
           </ul>
         </div>
 
         <div class="sidebar-card sidebar-card-share">
-          <h3 class="sidebar-title">مشاركة</h3>
-          <p class="sidebar-share-text">انشر هذا التطبيق لتعم الفائدة</p>
+          <h3 class="sidebar-title">{isEnglish ? 'Share' : 'مشاركة'}</h3>
+          <p class="sidebar-share-text">{isEnglish ? 'Share this app to spread the benefit' : 'انشر هذا التطبيق لتعم الفائدة'}</p>
           <div class="share-links">
             <a href={`https://t.me/share/url?url=${encodeURIComponent(pageUrl)}&text=${encodeURIComponent(shareText)}`} target="_blank" rel="noopener" class="share-link telegram">تيليجرام</a>
-            <a href={`mailto:?subject=${encodeURIComponent(shareText)}&body=${encodeURIComponent('اطّلع على هذا التطبيق:\n' + pageUrl)}`} target="_blank" rel="noopener" class="share-link email">البريد الإلكتروني</a>
+            <a href={`mailto:?subject=${encodeURIComponent(shareText)}&body=${encodeURIComponent((isEnglish ? 'Check out this app:\n' : 'اطّلع على هذا التطبيق:\n') + pageUrl)}`} target="_blank" rel="noopener" class="share-link email">البريد الإلكتروني</a>
             <a href={`https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + '\n' + pageUrl)}`} target="_blank" rel="noopener" class="share-link whatsapp">واتساب</a>
           </div>
         </div>
@@ -203,7 +206,7 @@ const shareText = `📱 ${app.data.title}`;
     font-size: 0.7rem;
     background: #fef3c7;
     color: #92400e;
-    padding: 0.1rem 0.6rem;
+    padding: 0.1rem 0.5rem;
     border-radius: 4px;
     border: 1px solid #f59e0b;
   }
@@ -309,7 +312,6 @@ const shareText = `📱 ${app.data.title}`;
     margin: 0.4rem 0 0 0;
   }
 
-  /* ─── Sidebar ─── */
   .app-detail-sidebar {
     display: flex;
     flex-direction: column;

@@ -1,5 +1,5 @@
 ---
-title: "أركان الإسلام - الشهادة (الجزء الأول)"
+title: "Pillars of Islam - Ash-Shahaadah (Part 1)"
 author: "عبد الرحمن بن ميهوب الجزائري"
 description: "A beautifully illustrated children's book explaining the first pillar of Islam: the Shahadah (testimony of faith). It covers the seven conditions of Laa Ilaaha Illaa Allaah: knowledge, certainty, sincerity, truthfulness, love, submission, and acceptance, with Qur'anic verses and engaging explanations."
 tags: ["Children", "Islamic Education", "Shahadah", "Aqeedah"]

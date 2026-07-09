@@ -1,5 +1,5 @@
 ---
-title: "أركان الإسلام - الشهادة (قصص)"
+title: "Pillars of Islam - Ash-Shahaadah (Stories)"
 author: "عبد الرحمن بن ميهوب الجزائري"
 description: "A collection of stories from the lives of the Companions to illustrate the conditions of the Shahadah. Includes stories of Abu Bakr's unwavering certainty, Uways al-Qarani's sincerity, Ka'b ibn Malik's truthfulness, 'Umar's love for the Prophet, and the submission at Hudaybiyyah."
 tags: ["Children", "Islamic Education", "Shahadah", "Companions", "Stories"]

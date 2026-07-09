@@ -1,5 +1,5 @@
 ---
-title: "أركان الإسلام - الشهادة (الجزء الثاني)"
+title: "Pillars of Islam - Ash-Shahaadah (Part 2)"
 author: "عبد الرحمن بن ميهوب الجزائري"
 description: "The second part of a children's book explaining the first pillar of Islam. This volume focuses on the second part of the Shahadah: Muhammadun Rasoolu Allah, covering the seven conditions of faith in the Messenger: knowledge, certainty, sincerity, truthfulness, love, submission, and acceptance."
 tags: ["Children", "Islamic Education", "Shahadah", "Prophet Muhammad"]
