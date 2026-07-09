@@ -8,6 +8,8 @@ const allApps = await getCollection('apps');
 // Group by type
 const pwaApps = allApps.filter((a) => a.data.type === 'pwa');
 const websiteApps = allApps.filter((a) => a.data.type === 'website');
+
+
 ---
 
 <PageLayout title="التطبيقات — عبد الرحمن القداري" description="مشاريع وتطبيقات رقمية متنوعة">
@@ -185,6 +187,8 @@ const websiteApps = allApps.filter((a) => a.data.type === 'website');
 </style>
 
 <script>
+
+  
   // Filter functionality
   const chips = document.querySelectorAll('.chip');
   const sections = document.querySelectorAll('.project-section');

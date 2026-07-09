@@ -1,0 +1,629 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:blogger='http://schemas.google.com/blogger/2018'>
+  <id>tag:blogger.com,1999:blog-6407892710634402235</id>
+  <title>Islamic Chidren's Books</title>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-377704726679355940</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>Islamic Creed Learning App</title>
+    <content type='html'>&lt;p&gt;&amp;nbsp;Muntaqā Kanz al-Aṭfāl — Islamic Creed Learning App&lt;br /&gt;&lt;br /&gt;A progressive web app (PWA) for studying Islamic creed through question-and-answer flashcards, built around two educational texts: Muntaqā Kanz al-Aṭfāl (a concise summary) and Kanz al-Aṭfāl (the full book), both by Dr. Fayṣal bnu Misfir al-Wādiʿī. The app currently offers the Arabic text of both books and the English translation of the full Kanz, with more translations planned.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;🔗 &lt;a href="https://cppuix.github.io/kanzAtfaal/"&gt;https://cppuix.github.io/kanzAtfaal/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Content&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;The app contains over 1,500 questions and answers, covering the pillars of faith, the names and attributes of Allāh, the prophets, the companions, the Qurʾān and its sciences, Islamic jurisprudence, biography of the Prophet ﷺ, etiquettes of daily life, and more. The Muntaqā edition (308 questions) includes a recorded audio recitation for every single question and answer.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;b&gt;Browse &amp;amp; Search&lt;br /&gt;&lt;/b&gt;&lt;br /&gt;- Questions are organized into chapters and presented as interactive flip cards — tap a card to reveal the answer with a smooth 3D animation.&amp;nbsp;&amp;nbsp;&lt;br /&gt;- The full list loads progressively so even the largest book feels instant.&amp;nbsp;&amp;nbsp;&lt;br /&gt;- A search bar lets you find any question or answer in seconds, with fuzzy Arabic matching that handles spelling variations and strips diacritics automatically.&amp;nbsp;&amp;nbsp;&lt;br /&gt;- Search results highlight the matched text and auto-flip cards to the answer face when the match is found there.&amp;nbsp;&amp;nbsp;&lt;br /&gt;- You can filter by chapter at any time, both in the main view and inside search.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;b&gt;Favorites&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;- Any card can be starred and saved to a personal favorites list, which persists across sessions.&amp;nbsp;&amp;nbsp;&lt;br /&gt;- The favorites view gives you quick access to the questions you want to revisit most.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;&lt;br /&gt;Quiz — Four Modes&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;The quiz section lets you test yourself on any chapter or the full book, with 5, 10, or 20 questions at a time. Four distinct modes keep practice engaging:&lt;br /&gt;&lt;br /&gt;1. Multiple Choice — read the question and pick the correct answer from four options.&amp;nbsp;&amp;nbsp;&lt;br /&gt;2. Build the Answer — the answer is split into shuffled word tiles; tap them in the right order to reconstruct it. Placed tiles can be tapped again to return them to the pool.&amp;nbsp;&amp;nbsp;&lt;br /&gt;3. Fill in the Blank — the answer is shown with its most meaningful word hidden; choose the correct word from four options.&amp;nbsp;&amp;nbsp;&lt;br /&gt;4. Listen and Identify — the audio recording plays and you identify the correct answer from four choices, training your ear alongside your memory.&amp;nbsp;&amp;nbsp;&lt;br /&gt;&lt;br /&gt;- The app tracks your performance automatically.&amp;nbsp;&amp;nbsp;&lt;br /&gt;- Any question you get wrong more often than right gets flagged as a weak spot, and a dedicated *Weak Spots* section appears in the chapter selector so you can drill exactly what needs work.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;b&gt;Audio&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;- Every question in the Muntaqā edition has a native-quality audio recording.&amp;nbsp;&amp;nbsp;&lt;br /&gt;- Audio plays on both the front and back of flip cards, synced across both faces.&amp;nbsp;&amp;nbsp;&lt;br /&gt;- Audio also plays during the Listen quiz mode.&amp;nbsp;&amp;nbsp;&lt;br /&gt;- The app caches all 308 audio files in the background after the first visit, so they play offline without any delay.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;b&gt;Share&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;- Each card's back face has two sharing buttons:&amp;nbsp;&amp;nbsp;&lt;br /&gt;&amp;nbsp; - Copy — puts the question and answer text on your clipboard in one tap.&amp;nbsp;&amp;nbsp;&lt;br /&gt;&amp;nbsp; - Share as Image — generates a polished 1080×1080 card image with question, answer, chapter label, question number, gold ornaments, and app URL as a watermark; shares via the system share sheet on mobile or downloads on desktop.&amp;nbsp;&amp;nbsp;&lt;br /&gt;- The settings panel also has a share-link button that copies (or shares) a deep link to the current content and chapter.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;&lt;br /&gt;Settings&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;- A settings panel (gear icon) gives three controls:&amp;nbsp;&amp;nbsp;&lt;br /&gt;&amp;nbsp; - Font size: small, medium, large&amp;nbsp;&amp;nbsp;&lt;br /&gt;&amp;nbsp; - High contrast mode for better readability in bright light&amp;nbsp;&amp;nbsp;&lt;br /&gt;&amp;nbsp; - Share-link button&amp;nbsp;&amp;nbsp;&lt;br /&gt;- Font size and contrast preference are saved and restored automatically on every visit.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;b&gt;Offline &amp;amp; Installable&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;- Full PWA: works entirely offline after the first visit.&amp;nbsp;&lt;br /&gt;- Installable to home screen on any device (iPhone, Android, desktop) and opens like a native app.&amp;nbsp;&amp;nbsp;&lt;br /&gt;- App shell updates silently in the background; users always get the latest version on next normal refresh.&amp;nbsp;&amp;nbsp;&lt;br /&gt;- No accounts. No ads. No tracking. Completely free.&amp;nbsp;&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-03-28T19:22:35.005Z</blogger:created>
+    <published>2026-03-28T19:23:00.008Z</published>
+    <updated>2026-03-28T19:23:51.551Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/03/islamic-creed-learning-app.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-660315524581187566</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>🌱 Understanding the Nature of Children</title>
+    <content type='html'>&lt;p&gt;When you understand the nature of children, many things that would normally cause frustration become easier to bear with patience and wisdom.&lt;br /&gt;&lt;br /&gt;A young child — from birth to usually around four years old — naturally sees the world as revolving around them, everything belongs to them in their head. They may take things that don’t belong to them or refuse to share, not out of bad intention, rather it's their nature, they haven’t yet developed the concept of ownership or the awareness of others — they'll eventually grow out of it if you teach them well with gentleness.&amp;nbsp;&amp;nbsp;&lt;br /&gt;&lt;br /&gt;So instead of reacting with anger, you respond by teaching them with patience and ḥilm (forbearance). They are not disobeying out of bad intention, but lack of understanding.&amp;nbsp;&lt;br /&gt;&lt;br /&gt;Similarly, younger children are naturally drawn to what they can see and experience more than what they are told.&lt;br /&gt;&lt;br /&gt;If, for example, an eight year old child delays prayer or prefers playing games over ḥifẓ, it's not because they hate worship or reject obedience to Allāh, rather, it is because:&lt;br /&gt;&lt;br /&gt;The ghayb (unseen) is still abstract to them, while the dunya is immediate and tangible. So they don't want to "miss out" on the fun while praying or memorising.&lt;br /&gt;&lt;br /&gt;And this is something even adults struggle with, let alone children.&amp;nbsp;&lt;br /&gt;&lt;br /&gt;So tarbiyah here requires:&lt;br /&gt;&lt;br /&gt;• Gradual nurturing of īmān&lt;br /&gt;• Patience over years, not days&lt;br /&gt;• Consistency without harshness&lt;br /&gt;&lt;br /&gt;You plant the seed early, but you don’t expect the tree to grow overnight.&lt;br /&gt;&lt;br /&gt;This also extends beyond children.&amp;nbsp;&lt;br /&gt;&lt;br /&gt;When you understand people's nature, you begin to deal with them with wisdom, not mere reactions.&lt;br /&gt;&lt;br /&gt;• A man who understands emotional fluctuations may show more patience and sympathy instead of taking things personally.&lt;br /&gt;&lt;br /&gt;• A woman who understands that anger is a human nature Allāh trialed men with especially may respond with more restraint instead of provocatively.&lt;br /&gt;&lt;br /&gt;So you deal with people with their level of understanding — not your own.&lt;br /&gt;&lt;br /&gt;With that said, this understanding is an excuse for others, but not a justification for ourselves.&lt;br /&gt;&lt;br /&gt;You assume the best of your Muslim brothers and sisters, you excuse them, you show mercy.&amp;nbsp;&lt;br /&gt;&lt;br /&gt;But you also hold yourself accountable, you strive against the blameworthy traits you were tested with, you don’t hide behind “this is just my nature”.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;- كتبته أم عبدالرحمن السودانية،&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;٦ شوال ١٤٧٧هـ&lt;/span&gt;&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-03-28T19:25:31.608Z</blogger:created>
+    <published>2026-03-28T19:26:00Z</published>
+    <updated>2026-03-28T19:26:03.512Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/03/understanding-nature-of-children.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-1072806055819046366</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>Landscape</title>
+    <content type='html'>&lt;p&gt;When I was a child, landscape books always caught my attention.&lt;br /&gt;&lt;br /&gt;They felt different.&lt;br /&gt;&lt;br /&gt;Most books stood upright, packed with lines of text marching down the page. But landscape pages opened wide. They felt spacious. There was room to look around. Room to breathe.&lt;br /&gt;&lt;br /&gt;For a child...*finger snap*&lt;br /&gt;&lt;br /&gt;A tall page invites reading.&lt;br /&gt;A wide page invites exploring.&lt;br /&gt;&lt;br /&gt;You notice the drawing first. Your eyes wander. The text sits politely beside the scene instead of crowding it. The page feels alive rather than dense.&lt;br /&gt;&lt;br /&gt;I do not want walls of text. I want space. I want curiosity. I want discovery.&lt;br /&gt;&lt;br /&gt;Landscape pages naturally limit how much text you can place on them, and that makes the story slow down. If the story slows down, each page becomes a moment instead of a slap of ink.&lt;br /&gt;&lt;br /&gt;The page becomes theirs.&lt;br /&gt;&lt;br /&gt;Those memories stayed with me. So when it came time to create something for children, the choice was obvious.&lt;br /&gt;&lt;br /&gt;Not tall pages that ask them to sit still.&lt;br /&gt;&lt;br /&gt;Wide pages that invite them in.&lt;br /&gt;&lt;br /&gt;—Abū Sahl, ʿAbdurraḥmān al-Qaddārī&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-03-28T19:11:24.594Z</blogger:created>
+    <published>2026-03-28T19:11:24.597Z</published>
+    <updated>2026-03-28T19:11:36.992Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/03/landscape.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-2216197833136799317</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>️A glimpse of the reverence for the Sunnah in the life of al-Albānī</title>
+    <content type='html'>&lt;p dir="rtl" style="text-align: right;"&gt;&amp;nbsp;&lt;span style="font-family: Amiri;"&gt;&amp;nbsp;&lt;b&gt;️صورة من تعظيم السُّنة والعناية في حياة الشيخ الألباني رحمه الله.&lt;br /&gt;&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;️A glimpse of the reverence for the Sunnah and care for it in the life of ash-shaykh al-Albānī (may Allāh have mercy on him).&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;عن أم المؤمنين عائشة رَضِيَ اللهُ عنها قَالَت:&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;On the authority of the Mother of the Believers ʿĀʾishah (may Allāh be pleased with her), she said:&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;جاءت عجوزٌ إلى النبيِّ صلَّى اللهُ عليهِ وسلَّمَ وهو عندي&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;An elderly woman came to the Prophet (ﷺ) while he was with me.&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;فقال لها رسولُ اللهِ صلَّى اللهُ عليهِ وسلَّمَ : من أنتِ ؟&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The Messenger of Allah (ﷺ) said to her: “Who are you?”&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;قالت : أنا جثَّامةُ المُزنيَّةُ&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;She said: “I am Jaththāmah al-Muzaniyyah”.&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;فقال : 《 بل أنتِ حسَّانةُ المُزنيَّةُ》.&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;He said: “Rather, you are Ḥassānah al-Muzaniyyah”.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;【 السلسلة الصحيحة      (١ /٤٢٤) 】&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;As-Silsilah aṣ-Ṣaḥīḥah (1/424)&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;قال الإمام محمد ناصر الدين الألباني رحمه الله تبارك و تعالى&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Al-imām Muḥammad Nāṣir ad-Dīn al-Albānī (may Allāh, Blessed and Exalted, have mercy on him)&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;‏&lt;span style="font-family: Amiri;"&gt;بعد تخريجه لهذا الحديث :&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;said after conducting takhrīj (tracing/sourcing/authentication) of this ḥadīth:&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;"هذا
+ ولقد كان الباعث على تحرير القول في هذا الحديث خاصة أن الله تبارك وتعالى
+ رزقني بعد ظهر الثلاثاء في عشرين ربيع الآخر سنة ١٣٨٥هـ طفلة جميلة، فلما 
+عزمت على أن أختار لها اسماً من أسماء الصحابيات الكريمات&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;“The
+ reason that prompted me to carefully examine this ḥadīth in particular 
+is that Allāh, Blessed and Exalted, had granted me—on Tuesday afternoon,
+ the 20th of Rabīʿ al-Ākhir, 1385 AH—a beautiful baby girl. When I 
+intended to choose for her a name from among the names of the noble 
+female Companions,&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;فوقع بصري على هذا الاسم حسّانة فمال إليه قلبي؛ لتحقيق الاقتداء به صلى الله عليه وسلم في تسميته جثامة به،&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;my
+ eyes fell upon the name Ḥassānah, and my heart inclined toward it, in 
+order to follow the example of the Prophet (ﷺ) who renamed Jaththāmah 
+with it.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;ولكن لم أبادر إلى ذلك حتى درست إسناد الحديث وتحققت من صحته ".&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;However, I did not proceed until I studied the chain of narration of the ḥadīth and confirmed its authenticity”.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;【 السلسلة الصحيحة        (١ / ٤٢٤ 】&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;As-Silsilah aṣ-Ṣaḥīḥah (1/424)&lt;br /&gt;&lt;br /&gt;---&lt;br /&gt;&lt;br /&gt;Jaththāmah: A dull-witted person, far from noble virtues.&lt;br /&gt;Ḥassānah: from the Arabic root ح-س-ن; which is "excellence".&lt;br /&gt;&lt;br /&gt;https://t.me/albani_salaf/877&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-06-07T21:51:42.762Z</blogger:created>
+    <published>2026-06-07T21:52:38.384Z</published>
+    <updated>2026-06-07T21:52:38.384Z</updated>
+    <blogger:location/>
+    <category scheme='tag:blogger.com,1999:blog-6407892710634402235' term='names'/>
+    <category scheme='tag:blogger.com,1999:blog-6407892710634402235' term='daughter'/>
+    <category scheme='tag:blogger.com,1999:blog-6407892710634402235' term='reverence'/>
+    <blogger:filename>/2026/06/a-glimpse-of-reverence-for-sunnah-in.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-3300767212035085210</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>The Prophet ﷺ Kissed His Grandsons</title>
+    <content type='html'>&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;&amp;nbsp;صحيح البخاري&lt;br /&gt;&lt;br /&gt;&amp;nbsp;5997&amp;nbsp; حدثنا&amp;nbsp; أبو اليمان ، أخبرنا&amp;nbsp; شعيب ، عن&amp;nbsp; الزهري ، حدثنا&amp;nbsp; أبو سلمة بن عبد الرحمن ، أن&amp;nbsp; أبا هريرة&amp;nbsp; رضي الله عنه قال :&amp;nbsp;&lt;br /&gt;قبل رسول الله صلى الله عليه وسلم الحسن بن علي، وعنده الأقرع بن حابس التميمي جالسا، فقال الأقرع : إن لي عشرة من الولد، ما قبلت منهم أحدا. فنظر إليه رسول الله صلى الله عليه وسلم ثم قال : " من لا يرحم لا يرحم ".&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Abū Hurayra reported that the Prophet ﷺ kissed al‑Ḥasan bna ʿAlī while al‑Aqraʿ bnu Ḥābis at-Tamīmī was present, sitting. Al‑Aqraʿ said, "I have ten children and I have never kissed any of them". The Messenger of Allah ﷺ looked at him and said, "Whoever is not merciful to others will not be treated mercifully".&lt;br /&gt;Saḥīḥ al-Bukhārī 5997&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-03-28T19:03:31.555Z</blogger:created>
+    <published>2026-03-28T19:04:00.005Z</published>
+    <updated>2026-03-28T19:04:21.646Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/03/the-prophet-kissed-his-grandsons.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-3843018050568850109</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>Most People Try To Learn Languages Backwards</title>
+    <content type='html'>&lt;p&gt;They begin with grammar rules, charts, verb tables, and technical explanations. They analyze the language before they even have enough words to think with. It feels serious, but it starves the brain of what it actually needs.&lt;br /&gt;&lt;br /&gt;Words.&lt;br /&gt;&lt;br /&gt;Your brain cannot build meaning from rules alone. Grammar is structure, but vocabulary is substance. Grammar arranges thoughts — vocabulary creates them.&lt;br /&gt;&lt;br /&gt;This quote captures it perfectly:&lt;br /&gt;&lt;br /&gt;"Without grammar, little can be conveyed. Without vocabulary, nothing can be conveyed".&lt;br /&gt;&lt;br /&gt;Think about how children learn language. A toddler doesn't memorize verb paradigms or grammatical cases. A toddler absorbs words. Thousands of them. Slowly, naturally, instinctively.&lt;br /&gt;&lt;br /&gt;Once the brain has enough words, patterns begin to emerge on their own.&lt;br /&gt;&lt;br /&gt;This is not guesswork. It is how human language acquisition works.&lt;br /&gt;&lt;br /&gt;Vocabulary Harvest is built around that simple truth.&lt;br /&gt;&lt;br /&gt;Instead of drowning you in rules, it feeds your mind what it actually needs: raw linguistic material. Words with full tashkīl so you see the language correctly from the beginning. Spaced repetition so the brain meets each word again exactly when it is about to forget it. Practice modes that force recall so the words stop being symbols and start becoming instinct.&lt;br /&gt;&lt;br /&gt;Over time something remarkable happens.&lt;br /&gt;&lt;br /&gt;The language stops feeling like a puzzle you must solve. It begins to feel like a landscape you can move through.&lt;br /&gt;&lt;br /&gt;You start recognizing words in khuṭbahs. In books. In Qurʾān recitation. The shapes become familiar. Meanings appear instantly instead of after translation.&lt;br /&gt;&lt;br /&gt;This is the moment when Arabic stops being studied and starts being embodied.&lt;br /&gt;&lt;br /&gt;Vocabulary Harvest is not trying to impress you with complexity.&lt;br /&gt;&lt;br /&gt;It is doing something much more powerful.&lt;br /&gt;&lt;br /&gt;It gives your mind the raw material it needs to build the language itself.&lt;br /&gt;&lt;br /&gt;It relieves your mind of the dead weight you've been carrying.&lt;br /&gt;&lt;br /&gt;It frees your brain through simplicity and minimalism.&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-03-28T19:14:06.440Z</blogger:created>
+    <published>2026-03-28T19:14:06.446Z</published>
+    <updated>2026-03-28T19:14:40.915Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/03/most-people-try-to-learn-languages.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-3849104004817927221</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>Mind Expansion in a Chain of Awe</title>
+    <content type='html'>السلام عليكم ورحمة الله وبركاته.&lt;br&gt;&lt;br&gt;Dear parents,&lt;br&gt;&lt;br&gt;You can't pass on the love of the salaf if you yourself don't feel it.&lt;br&gt;&lt;br&gt;"What do I do then? Don't just drop problems on us and disappear…".&lt;br&gt;&lt;br&gt;It's actually quite easy—and &lt;b&gt;enjoyable&lt;/b&gt;:&lt;br&gt;&lt;b&gt;Learn about them alongside your child.&lt;/b&gt;&lt;br&gt;&lt;br&gt;"Mommy and daddy are also learning with me…must be important!"&lt;br&gt;&lt;br&gt;That's a child's subconscious.&lt;br&gt;&lt;br&gt;Children are…marvelous, to say the least. Allāh's creation is! It's our mistake for letting it fade by not nurturing it with what preserves it.&lt;br&gt;&lt;br&gt;Enjoy this next short piece:&lt;br&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;blockquote&gt;&lt;b&gt;Mind Expansion in a Chain of Awe&lt;/b&gt;&lt;/blockquote&gt;&lt;br&gt;&lt;blockquote&gt;Picture him, a man in rough clothes, a man who does not bend, a man with īmān strong enough to guide an ummah.&lt;br&gt;&lt;br&gt;A man who led the people into victories no one expected.&lt;br&gt;A man who faced empires that thought they were eternal…&lt;br&gt;&lt;br&gt;And by what means? Horses and camels. Dust and orders. Kisrā never saw it coming.&lt;br&gt;&lt;br&gt;Again, picture him. A single man Allāh chose to lead the ummah. Not from a throne. Not from above. From the ground. His steps raised dust. He slept on it.&lt;br&gt;&lt;br&gt;He summed it up in one line:&lt;br&gt;"We are a people Allāh honored by Islām. If we were to seek honor by other than Islām, Allāh will humiliate us".&lt;br&gt;&lt;br&gt;That's ʿUmar.&lt;br&gt;&lt;br&gt;Now, perhaps a thought comes to your mind. Another man…&lt;br&gt;&lt;br&gt;Who casts that bigger shadow?&lt;br&gt;&lt;br&gt;Abu Bakr.&lt;br&gt;&lt;br&gt;Earlier. Firmer. Stronger.&lt;br&gt;He steered the ummah when it wavered, when hearts shook after the Prophet ﷺ passed.&lt;br&gt;He did not use force. He displayed certainty. And that certainty poured into every heart.&lt;br&gt;&lt;br&gt;His īmān was heavier than that of the whole ummah. Yes. ʿUmar included.&lt;br&gt;&lt;br&gt;ʿUmar knew and mentioned a lot how Abu Bakr was levels above him.&lt;br&gt;&lt;br&gt;That is Abu Bakr.&lt;br&gt;&lt;br&gt;Now, think higher still. The two of them—ministers of whom?&lt;br&gt;&lt;br&gt;The Messenger of Allāh ﷺ.&lt;br&gt;&lt;br&gt;Whatever greatness you felt reflecting on ʿUmar and Abu Bakr…[complete this sentence however you wish…you get the idea].&lt;br&gt;&lt;br&gt;And all three were created by Allāh, عز وجل.&lt;br&gt;&lt;br&gt;Think about that.&lt;br&gt;&lt;br&gt;—Abū Sahl, ʿAbdurraḥmān al-Qaddārī&lt;/blockquote&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-02-23T06:09:30.591Z</blogger:created>
+    <published>2026-02-23T06:09:28.314Z</published>
+    <updated>2026-02-23T06:09:30.591Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/02/mind-expansion-in-chain-of-awe.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-3886060295278607784</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>Use The Handle, Not The Crowbar</title>
+    <content type='html'>&lt;p&gt;He's refusing his books, avoiding his lessons, dragging his feet when it is time to memorize, read, write, revise, sit, listen. You see the parent getting tired, the teacher getting frustrated, the child becoming slippery and evasive, and the easy conclusion is:&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;blockquote&gt;This child does not want to learn.&lt;/blockquote&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;But is that true?&lt;/p&gt;&lt;p&gt;The more I think about teaching children, the more I feel that it is very rare to find a child who is truly not interested in anything. I'm not even sure such a thing exists!&lt;/p&gt;&lt;p&gt;A child may be uninterested in &lt;i&gt;your&lt;/i&gt; lesson.&lt;/p&gt;&lt;p&gt;He may be uninterested in the book you gave him.&lt;/p&gt;&lt;p&gt;He may be uninterested in the way you are explaining it.&lt;/p&gt;&lt;p&gt;He may be uninterested in sitting still while someone speaks at him as if his mind is a cupboard where facts are supposed to be placed.&lt;/p&gt;&lt;p&gt;But uninterested in everything?&lt;/p&gt;&lt;p&gt;That is hard to believe.&lt;/p&gt;&lt;p&gt;Look at children carefully.&lt;/p&gt;&lt;p&gt;A child who cannot sit for ten minutes with a worksheet may spend an hour building something with tiny pieces.&lt;/p&gt;&lt;p&gt;A child who forgets his school lesson may remember every rule of a game.&lt;/p&gt;&lt;p&gt;A child who seems careless with reading may notice the smallest change in a toy, a machine, an animal, a room, a road, a voice, or even your facial expression.&lt;/p&gt;&lt;p&gt;A child who does not want to answer textbook questions may ask a question at the most random moment (to you) that shows his mind has been working quietly for days.&lt;/p&gt;&lt;p&gt;Is he blank, or are we reading the signals the wrong way?&lt;/p&gt;&lt;p&gt;His mind is moving.&lt;/p&gt;&lt;p&gt;We just may not be meeting it where it is moving.&lt;/p&gt;&lt;p&gt;And this is where I think many adults make a mistake. They confuse rejection of a method with rejection of learning itself.&lt;/p&gt;&lt;p&gt;A child resists one path, so we say he hates the destination.&lt;/p&gt;&lt;p&gt;But what if the path is the problem?&lt;/p&gt;&lt;p&gt;Maybe the door is simply in another wall.&lt;/p&gt;&lt;p&gt;There is a big difference between saying, "This child has no interest", and saying, "I have not yet understood where his interest begins".&lt;/p&gt;&lt;p&gt;The first makes the child the whole problem.&lt;/p&gt;&lt;p&gt;The second forces the adult to observe.&lt;/p&gt;&lt;p&gt;And observation is not easy. It is easier to force. It is easier to raise the voice. It is easier to say, "Sit down and finish this". Sometimes that may even be necessary, because children do need discipline. They cannot be left to float wherever their moods carry them.&lt;/p&gt;&lt;p&gt;But discipline without understanding can become a very blunt tool.&lt;/p&gt;&lt;p&gt;It may make the child obey, but it won't make him love knowledge.&lt;/p&gt;&lt;p&gt;And if we only teach a child to associate study with pressure, heaviness, comparison, fear, humiliation, and boredom, then we should not be shocked when he runs away from it the moment he has freedom.&lt;/p&gt;&lt;p&gt;Shouldn't be surprised that he escapes; we keep training that behavior.&lt;/p&gt;&lt;p&gt;"But habibi, we can't put rainbows and sunshine in everything…"&amp;nbsp;&lt;/p&gt;&lt;p&gt;Yes, yes, I do not think the answer is to make everything playful either.&lt;/p&gt;&lt;p&gt;That is another mistake.&lt;/p&gt;&lt;p&gt;Some people hear this kind of discussion and think the solution is to turn every lesson into a game, every book into entertainment, every serious thing into colored sugar.&lt;/p&gt;&lt;p&gt;No.&lt;/p&gt;&lt;p&gt;That is not what I mean.&lt;/p&gt;&lt;p&gt;A child's interest is not the master.&lt;/p&gt;&lt;p&gt;It is the handle, the entrance.&lt;/p&gt;&lt;p&gt;You do not obey his preferences…you use them as a doorway.&lt;/p&gt;&lt;p&gt;Then you take him further than he would have gone on his own.&lt;/p&gt;&lt;p&gt;If a child loves animals, you begin there. You teach him names, categories, habitats, mercy, responsibility, signs of Allāh's creation, observation, patience.&lt;/p&gt;&lt;p&gt;If he loves building things, you begin there. You teach him order, sequence, numbers, balance, planning, cause and effect, finishing what he started.&lt;/p&gt;&lt;p&gt;If he loves stories, you begin there. You teach him language, memory, consequence, character, attention, how actions lead somewhere.&lt;/p&gt;&lt;p&gt;If he loves machines, maps, insects, tools, cooking, weather, space, sounds, patterns, anything, there is usually a path from that interest toward something higher.&lt;/p&gt;&lt;p&gt;The interest is not the end.&lt;/p&gt;&lt;p&gt;It is the handle.&lt;/p&gt;&lt;p&gt;You hold it, then open the door.&lt;/p&gt;&lt;p&gt;So, yeah, I do not like the idea that children simply need to be forced to study. It is too flat. It describes one part of the problem, but it does not explain the root cause.&lt;/p&gt;&lt;p&gt;Yes, some children need to be pushed.&lt;/p&gt;&lt;p&gt;Of course.&lt;/p&gt;&lt;p&gt;A child is merely wet clay. He does not always know what benefits him. He may prefer ease over effort. He may avoid difficulty. He may choose the screen over the book because the screen asks less of him and rewards him faster.&lt;/p&gt;&lt;p&gt;So I am not saying we should just follow the child's desires around like servants.&lt;/p&gt;&lt;p&gt;But before we force, we should ask: force toward what? And through which door? Where is the door even?&lt;/p&gt;&lt;p&gt;Because if the only model of study we offer is one narrow shape, then many children will look broken when they are not broken at all.&lt;/p&gt;&lt;p&gt;They are just being measured with the wrong instrument.&lt;/p&gt;&lt;p&gt;A fish is not stupid because it cannot climb trees.&lt;/p&gt;&lt;p&gt;Yes, a very common analogy, but a goldie oldie.&lt;/p&gt;&lt;p&gt;Some children need to walk around the building three times before they ask what is inside. Some need to touch something before they care about its name. Some need to hear the story before the rule. Some need the rule before the story. Some need silence. Some need movement. Some need to see. Some need to repeat. Some need to argue a little before the idea becomes real to them.&lt;/p&gt;&lt;p&gt;And yes, this is more work. A lot more work.&lt;/p&gt;&lt;p&gt;It is much easier to pretend all children are the same container.&lt;/p&gt;&lt;p&gt;Open lid.&lt;/p&gt;&lt;p&gt;Pour lesson.&lt;/p&gt;&lt;p&gt;Close lid.&lt;/p&gt;&lt;p&gt;Test contents.&lt;/p&gt;&lt;p&gt;Why is he not following the script?!&amp;nbsp;&lt;/p&gt;&lt;p&gt;Children are not containers!&lt;/p&gt;&lt;p&gt;They are living souls with temperaments, fears, strengths, weaknesses, curiosities, habits, and histories.&lt;/p&gt;&lt;p&gt;Even very young children already have a world inside them (&lt;a href="https://islaamchildrenbooks.blogspot.com/2026/03/understanding-nature-of-children.html" target="_blank"&gt;in which they are the center&lt;/a&gt;).&lt;/p&gt;&lt;p&gt;They are not blank paper in the way people imagine. They have patterns. They have attachments. They have questions. They have private logic. Sometimes strange logic, yes, but still logic.&lt;/p&gt;&lt;p&gt;And when adults do not take that seriously, children feel it…&lt;/p&gt;&lt;p&gt;He may not be able to explain it, but he feels when education is being done &lt;i&gt;to&lt;/i&gt; him rather than &lt;i&gt;with&lt;/i&gt; him.&lt;/p&gt;&lt;p&gt;And again, yes, this does not mean&amp;nbsp;the child becomes the teacher.&lt;/p&gt;&lt;p&gt;It means the teacher pays attention.&lt;/p&gt;&lt;p&gt;There is a difference.&lt;/p&gt;&lt;p&gt;A good teacher does not surrender authority. But he also does not confuse authority with blindness.&lt;/p&gt;&lt;p&gt;He watches.&lt;/p&gt;&lt;p&gt;He notices where the child wakes up, where he lights up, and his eyes brighten.&lt;/p&gt;&lt;p&gt;That moment matters…a lot. It's gold.&lt;/p&gt;&lt;p&gt;The eyes change. The child leans forward. He asks a question. He interrupts. He repeats something. He wants to try. He corrects someone. He laughs because he understood (!). He becomes annoyed &lt;i&gt;because&lt;/i&gt; he cares. He starts explaining it to someone else. He goes quiet in a different way.&lt;/p&gt;&lt;p&gt;That is the opening.&lt;/p&gt;&lt;p&gt;That is where the adult should think, "Aha! Found it! Here. He's alive!"&lt;/p&gt;&lt;p&gt;Then the work begins.&lt;/p&gt;&lt;p&gt;Because, of course, again, the goal is not to keep the child entertained. The goal is to connect that living point to discipline, truth, knowledge, worship, skill, and character.&lt;/p&gt;&lt;p&gt;Begin where the child is…but do not leave him there.&lt;/p&gt;&lt;p&gt;I think that line solves many confusions.&lt;/p&gt;&lt;p&gt;The adult has to do both: Come down enough to find the child, then guide him upward.&lt;/p&gt;&lt;p&gt;From this, you can see why curiosity alone is not enough. Curiosity is a spark, but it needs protection. It needs direction. It needs wood. It needs patience. Otherwise it appears for a moment and disappears.&lt;/p&gt;&lt;p&gt;A child may ask one beautiful question, and an adult can kill it in three seconds.&lt;/p&gt;&lt;p&gt;"Stop asking too much".&lt;/p&gt;&lt;p&gt;"You do not need to know that".&lt;/p&gt;&lt;p&gt;"Because I said so".&lt;/p&gt;&lt;p&gt;"That is not part of the lesson".&lt;/p&gt;&lt;p&gt;"Later".&lt;/p&gt;&lt;p&gt;Of course, sometimes later is necessary. Not every question needs a full answer at that exact second. But if every sincere question is treated as an interruption, then slowly the child learns that his mind is a problem.&lt;/p&gt;&lt;p&gt;And when a child learns that his mind is a problem, he either becomes passive or rebellious.&lt;/p&gt;&lt;p&gt;Both are losses.&lt;/p&gt;&lt;p&gt;The passive child stops asking.&lt;/p&gt;&lt;p&gt;The rebellious child keeps asking, but now his questions are mixed with defiance.&lt;/p&gt;&lt;p&gt;And then adults say, "See? Questions are dangerous". Habibi, you led him there.&lt;/p&gt;&lt;p&gt;So, no, &lt;b&gt;&lt;i&gt;neglected&lt;/i&gt;&lt;/b&gt; questions are dangerous, not questions themselves.&lt;/p&gt;&lt;p&gt;Maybe curiosity became irritated because nobody gave it adab, structure, and a proper path.&lt;/p&gt;&lt;p&gt;This is why the issue is delicate.&lt;/p&gt;&lt;p&gt;We do not want wild curiosity with no discipline.&lt;/p&gt;&lt;p&gt;And we do not want dead discipline with no curiosity.&lt;/p&gt;&lt;p&gt;We want the child to feel that knowledge is alive, but also that it has manners. It has effort. It has sequence. It has elders. It has boundaries. It has seriousness.&lt;/p&gt;&lt;p&gt;That balance is hard, because it is real, and real things are not free.&lt;/p&gt;&lt;p&gt;When people say children today need to be forced to study, I want to ask:&lt;/p&gt;&lt;p&gt;Have we shown them what study actually is?&lt;/p&gt;&lt;p&gt;Have we shown them that study is not only sitting with a schoolbook while someone watches the clock?&lt;/p&gt;&lt;p&gt;Have we shown them that study can mean noticing, comparing, asking, memorizing, testing, building, listening, repeating, reading, connecting, correcting yourself, returning to something after forgetting it?&lt;/p&gt;&lt;p&gt;Have we shown them that knowledge is not a punishment?&lt;/p&gt;&lt;p&gt;Or have we made learning feel like…well…anti-fun…&lt;/p&gt;&lt;p&gt;Some children live in a strange educational world.&lt;/p&gt;&lt;p&gt;They are corrected more than they are guided.&lt;/p&gt;&lt;p&gt;Tested more than they are awakened.&lt;/p&gt;&lt;p&gt;Compared more than they are understood.&lt;/p&gt;&lt;p&gt;Commanded more than they are invited.&lt;/p&gt;&lt;p&gt;Then, when they withdraw, we call them lazy.&lt;/p&gt;&lt;p&gt;Maybe some are lazy.&lt;/p&gt;&lt;p&gt;But laziness is not always the first layer.&lt;/p&gt;&lt;p&gt;Sometimes laziness is a cover.&lt;/p&gt;&lt;p&gt;A child may look lazy because he is confused.&lt;/p&gt;&lt;p&gt;Or ashamed.&lt;/p&gt;&lt;p&gt;Or afraid of being wrong.&lt;/p&gt;&lt;p&gt;Or tired of being compared.&lt;/p&gt;&lt;p&gt;Or unable to see the point.&lt;/p&gt;&lt;p&gt;Or bored because the lesson is too easy. (Did you know that some kids underperform if you give them something that is way below their cognitive abilities?)&lt;/p&gt;&lt;p&gt;Or overwhelmed because the lesson is too hard.&lt;/p&gt;&lt;p&gt;Or simply disconnected because nobody found the &lt;b&gt;bridge&lt;/b&gt; (!) between what he already cares about and what he needs to learn.&lt;/p&gt;&lt;p&gt;That bridge is important.&lt;/p&gt;&lt;p&gt;Without it, education becomes dragging.&lt;/p&gt;&lt;p&gt;With it, the child may still struggle, but at least he knows there is a path ahead.&lt;/p&gt;&lt;p&gt;And maybe this is one of the main jobs of a parent or teacher: not to remove all difficulty, &lt;b&gt;but to make the difficulty meaningful&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;Because children can handle difficulty when it feels meaningful.&lt;/p&gt;&lt;p&gt;They do it all the time.&lt;/p&gt;&lt;p&gt;They repeat a game level again and again.&lt;/p&gt;&lt;p&gt;They practice a trick.&lt;/p&gt;&lt;p&gt;&lt;b&gt;They build something that keeps falling&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;They ask the same question in different forms.&lt;/p&gt;&lt;p&gt;&lt;b&gt;They try to win&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;They try to understand how something works.&lt;/p&gt;&lt;p&gt;&lt;b&gt;They can be patient when they care&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;So the issue is not always patience itself.&lt;/p&gt;&lt;p&gt;Sometimes the issue is that we are asking for patience before we have created any connection.&lt;/p&gt;&lt;p&gt;&lt;b&gt;We want the fruit before the root&lt;/b&gt;. (That's an idiom right there…)&lt;/p&gt;&lt;p&gt;And then we say the tree is bad.&lt;/p&gt;&lt;p&gt;We need to become better at cultivating the root.&lt;/p&gt;&lt;p&gt;Where is this child already alive?&lt;/p&gt;&lt;p&gt;What does he return to without being forced?&lt;/p&gt;&lt;p&gt;What does he notice?&lt;/p&gt;&lt;p&gt;What does he talk about?&lt;/p&gt;&lt;p&gt;What does he collect?&lt;/p&gt;&lt;p&gt;What does he imitate?&lt;/p&gt;&lt;p&gt;What makes him ask why?&lt;/p&gt;&lt;p&gt;What makes him quiet?&lt;/p&gt;&lt;p&gt;What makes him careful?&lt;/p&gt;&lt;p&gt;What makes him brave?&lt;/p&gt;&lt;p&gt;Those are not random details. They are clues…keys!&lt;/p&gt;&lt;p&gt;A &lt;b&gt;parent&lt;/b&gt; who notices them has a &lt;b&gt;map&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;A teacher who notices them has a doorway.&lt;/p&gt;&lt;p&gt;And once you have the doorway, you can begin to teach properly.&lt;/p&gt;&lt;p&gt;No flattering the child, and no letting him rule.&lt;/p&gt;&lt;p&gt;Instead, the atmosphere should say:&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;I see where your mind begins.&lt;/p&gt;&lt;p&gt;Now let me show you where it can go.&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;That, to me, is much better than simply saying children need to be forced to study.&lt;/p&gt;&lt;p&gt;Maybe some force is needed.&lt;/p&gt;&lt;p&gt;But force is a poor substitute for understanding.&lt;/p&gt;&lt;p&gt;It may move the body to the chair.&lt;/p&gt;&lt;p&gt;It cannot, by itself, open the mind.&lt;/p&gt;&lt;p&gt;And the mind is the point.&lt;/p&gt;&lt;p&gt;Not just the chair.&lt;/p&gt;&lt;p&gt;Not just the book being open.&lt;/p&gt;&lt;p&gt;Not just the page being completed.&lt;/p&gt;&lt;p&gt;Not just the parent &lt;i&gt;feeling&lt;/i&gt; that something educational happened today.&lt;/p&gt;&lt;p&gt;The real question is: did the child come closer to knowledge? Did he become more awake? More disciplined? More truthful? More able to notice? More able to ask? More able to stay with something difficult? More able to connect what he loves to what benefits him?&lt;/p&gt;&lt;p&gt;That is education. Read that word again.&lt;/p&gt;&lt;p&gt;And when we see it this way, the child is no longer an enemy to be subdued.&lt;/p&gt;&lt;p&gt;He is a soul to be guided.&lt;/p&gt;&lt;p&gt;A mind to be reached.&lt;/p&gt;&lt;p&gt;A seed to be cultivated according to what it is, not according to the shape we lazily prepared for every seed.&lt;/p&gt;&lt;p&gt;Some need more sun.&lt;/p&gt;&lt;p&gt;Some need more shade.&lt;/p&gt;&lt;p&gt;Some need stronger soil.&lt;/p&gt;&lt;p&gt;Some need protection from being overwatered.&lt;/p&gt;&lt;p&gt;Use the handle, not the crowbar…&lt;br /&gt;a gentle turn can take you far.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;—Abū Sahl, ʿAbdurraḥmān al-Qaddārī&amp;nbsp;&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-05-16T16:36:03.707Z</blogger:created>
+    <published>2026-05-16T18:47:32.004Z</published>
+    <updated>2026-05-16T18:55:21.635Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/05/use-handle-not-crowbar.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-4103664952183486470</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title> Raising Thinkers, Not Repeaters</title>
+    <content type='html'>If you want to teach a child something, you must first understand it yourself. Not at the level of a scholar, but enough to give a mental model—a framework.&lt;p&gt;&lt;br /&gt;Don't dump details on children, plant seeds instead.&lt;br /&gt;&lt;br /&gt;Children's minds are fertile soil. That's why they sometimes shock us with sharp observations. It's not magic. It's a fresh brain working from the roots up, without layers of bad assumptions.&lt;br /&gt;&lt;br /&gt;When you notice that spark, stop and pay attention. That's a blessing. Grow it. Watch the questions they ask. Those questions are the mind revealing how it works and what it needs to reach its potential.&lt;br /&gt;&lt;br /&gt;People are different, and children are people. Intelligence is not one thing.&lt;br /&gt;&lt;br /&gt;When a child asks something you cannot answer, do not improvise nonsense. That kills curiosity, because the child senses that. It's like pouring water on a flame.&lt;br /&gt;&lt;br /&gt;Say clearly: "I don't know. I'll ask someone knowledgeable". Or: "Let's do a research about it!", but only if you are qualified. Otherwise ask people who are.&lt;br /&gt;&lt;br /&gt;That does something powerful. The spark stays alive. It intensifies. The child waits, thinks, anticipates. Sometimes they solve it themselves through logic. Sometimes they learn something deeper: this question matters. It’s big enough that even mommy or daddy must ask others.&lt;br /&gt;&lt;br /&gt;Let them feel that. They need it.&lt;br /&gt;&lt;br /&gt;That's how you grow a healthy plant. Later, it becomes a tree. Trees give fruit. Fruit carries seeds.&lt;br /&gt;&lt;br /&gt;Do not limit the child. Teach them that knowledge is vast, and that scholars exist for a reason.&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-01-25T08:25:04.182Z</blogger:created>
+    <published>2026-01-25T08:25:04.185Z</published>
+    <updated>2026-01-25T08:25:30.751Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/01/raising-thinkers-not-repeaters.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-4964866352397484506</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>Stop complaining to the people!</title>
+    <content type='html'>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;As Sufyān Ath-Thawrī said:&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;حَدَّثَنَا
+ أَحْمَدُ، نَا إِبْرَاهِيمُ الحَرْبِيُ، نَا أَبُو حَذَيْفَةَ؛ قَالَ: 
+رَأَى الثَّوْرِيِّ رَجُلًا عِنْدَ قَوْمٍ يَشْكُو ضِيقَهُ، فَقَالَ لَهُ 
+الثَّوْرِيُّ: يَا هَذَا! شَكَوْتَ مَنْ يَرْحَمُكَ إِلَى مَنْ لا 
+يَرْحَمُك!&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;Aḥmed reported that Ibrāhīm Al-Ḥarbī 
+narrated that Abū Ḥudhayfah said, "Ath-Thawrī saw a man sitting with 
+people complaining about his difficult situation, and he said to him, 
+'Hey you! You complained about the One who has mercy for you to the ones
+ who do not have mercy for you."&lt;br /&gt;&lt;br /&gt;[al-Mujālasah wa Jawāhir al-ʿIlm (al-Dīnawarī)]&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;br /&gt;&lt;br /&gt;The One putting you through these difficulties is the One who has Mercy for you.&amp;nbsp;&lt;br /&gt;&lt;br /&gt;The hardships He puts you through make you to return to Him — this is in itself a mercy.&lt;br /&gt;&lt;br /&gt;So do not be from those who respond to trials by turning to the people with complaints.&lt;br /&gt;Because in reality, such a person is complaining about the One who put him in this tribulation.&lt;br /&gt;&lt;br /&gt;And this is the reality every time we complain.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;&amp;nbsp;﴿ قَالَ إِنَّمَاۤ أَشۡكُوا۟ بَثِّی وَحُزۡنِیۤ إِلَى ٱللَّهِ ﴾&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;“He said: I only complain of my grief and my sorrow to Allāh”&lt;br /&gt;[Yūsuf, 86]&lt;br /&gt;&lt;br /&gt;Be
+ like Prophet Yaʿqūb عليه السلام. Humble yourself before your Rabb and 
+take your complaints to the only One who can remove your difficulty.&lt;br /&gt;&lt;br /&gt;People do not carry with them the solutions to your problems.&lt;br /&gt;&lt;br /&gt;What
+ can the people do for you when they have problems of their own? How 
+will the people help you if Allāh does not will for them to help you? 
+How can you rely on the people to save you when they are just as poor as
+ you?&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;﴿ یَـٰۤأَیُّهَا ٱلنَّاسُ أَنتُمُ ٱلۡفُقَرَاۤءُ إِلَى ٱللَّهِۖ وَٱللَّهُ هُوَ ٱلۡغَنِیُّ ٱلۡحَمِیدُ ﴾&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;“O humanity! It is you who are poor and in need of Allāh, but Allāh is Rich (free of all needs), Worthy of all praise.”&lt;br /&gt;[Fāṭir, 15]&lt;br /&gt;&lt;br /&gt;So turn your heart to Allāh ﷻ — not the people. For the One who trials you is the only One who can relieve you.&lt;br /&gt;&lt;br /&gt;—Benefitted from Ustādh Muḥammad ibn James Sutton وفقه الله&amp;nbsp;&lt;br /&gt;&lt;br /&gt;🖊️Umm Muṣʿab Al-Ghāniyyah Al-Almāniyyah&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;a href="https://t.me/uponthepathofsalaf/231"&gt;https://t.me/uponthepathofsalaf/231&amp;nbsp;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;I
+ said: Be like that kid who cries and calls to his mommy for help while 
+his mommy herself is the one giving him a good beating because he was 
+such a bad boy.&amp;nbsp;&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-04-29T20:15:22.434Z</blogger:created>
+    <published>2026-04-29T20:15:43.366Z</published>
+    <updated>2026-04-29T20:15:43.366Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/04/stop-complaining-to-people.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-5060563812806856423</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>Not Every Interruption Is An Interruption</title>
+    <content type='html'>&lt;p&gt;So there she sits with her book…finally, after a long day, she finally finds a quiet moment. A page opens, her mind slowly settles, and ideas begin connecting.&lt;/p&gt;&lt;p&gt;But then:&lt;/p&gt;&lt;p&gt;"Ummi…"&lt;/p&gt;&lt;p&gt;A scribb…sorry, a &lt;i&gt;piece of art&lt;/i&gt;…needs admiration.&lt;br /&gt;A button that needs "fixing".&lt;br /&gt;A story that goes nowhere needs an ear, right now!&lt;br /&gt;Or if they feel like being honest, then no reason except that they want her near…now the button doesn't need fixing.&lt;/p&gt;&lt;p&gt;She perhaps feels pulled away from something "more valuable" (you heard that right).&lt;br /&gt;&lt;br /&gt;Because these moments feel small while they are happening.&lt;br /&gt;&lt;br /&gt;A question.&lt;br /&gt;A scribb…sorry, again, a &lt;i&gt;piece of art&lt;/i&gt;.&lt;br /&gt;A child asking her to watch something unimportant (how dare you) for the third time that day.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;And when things repeat often enough, the nafs slowly begins treating them as background noise instead of something weighty.&lt;br /&gt;&lt;br /&gt;And perhaps that is the danger.&lt;br /&gt;&lt;br /&gt;That these moments feel so small...that a mother can begin seeing them as obstacles standing between her and what she wanted to finish.&lt;br /&gt;&lt;br /&gt;But yā ukhti, childhood does not remain in this form for long.&lt;br /&gt;&lt;br /&gt;A child who keeps pulling you away today will not always do so.&lt;/p&gt;&lt;p&gt;And this child is not trying to stand between you and knowledge.&lt;/p&gt;&lt;p&gt;He only wants his mommy.&lt;/p&gt;&lt;p&gt;He does not know what masʾalah you are studying.&lt;br /&gt;He does not understand what benefit made you pause and reflect.&lt;br /&gt;He cannot distinguish between tafsīr, fiqh, and ʿaqīdah.&lt;/p&gt;&lt;p&gt;But he understands something else very clearly.&lt;/p&gt;&lt;p&gt;He understands whether your presence feels gentle…in those moments.&lt;br /&gt;Whether he feels welcomed near you…in those moments.&lt;br /&gt;Whether knowledge made the atmosphere of the home colder…or warmer.&lt;/p&gt;&lt;p&gt;This is something many mothers do not notice: the child is not only watching that you study, he is watching how you treat him &lt;i&gt;while&lt;/i&gt; you study.&lt;/p&gt;&lt;p&gt;He sees whether knowledge made you harsher…or gentler.&lt;/p&gt;&lt;p&gt;Whether your book always feels like something that takes you away from him…or something that still leaves room for warmth beside it.&lt;/p&gt;&lt;p&gt;So even these interruptions are part of his education, and &lt;i&gt;your&lt;/i&gt; education.&lt;/p&gt;&lt;p&gt;Because before a child loves knowledge itself, he first learns how knowledge feels through the one carrying it.&lt;/p&gt;&lt;p&gt;And that knowledge you're seeking, is just a means to worship Allāh correctly.&lt;/p&gt;&lt;p&gt;Among the most important acts of worship for a woman, is, taking care of her children.&lt;/p&gt;&lt;p&gt;So, letting knowledge seeking take more priority than your child defeats the purpose.&lt;/p&gt;&lt;p&gt;Think of it as overeating. The point is health, not food itself.&lt;/p&gt;&lt;p&gt;Now back again to your child:&lt;/p&gt;&lt;p&gt;Your child feels the atmosphere while those books are present.&amp;nbsp;&lt;/p&gt;&lt;p&gt;Warm? Cold? Harsh?&amp;nbsp;Gentle?&lt;/p&gt;&lt;p&gt;These early feelings settle deep.&lt;/p&gt;&lt;p&gt;Years later, he may not remember the exact books you read.&lt;/p&gt;&lt;p&gt;But he will remember the atmosphere surrounding them.&lt;/p&gt;&lt;p&gt;The woman who kept learning…without making him feel abandoned by her learning.&lt;/p&gt;&lt;p&gt;The woman whose pursuit of knowledge did not erase softness from the home.&lt;/p&gt;&lt;p&gt;So balance.&lt;/p&gt;&lt;p&gt;Do not let your child feel that knowledge stole you from him.&lt;/p&gt;&lt;p&gt;And do not let the light of knowledge disappear from the home entirely.&lt;/p&gt;&lt;p&gt;Let your child grow up seeing that knowledge and mercy were never enemies.&lt;/p&gt;&lt;p&gt;That the same hands which held the book…still held him gently too. 🌿&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;!--more--&gt;&amp;nbsp;&lt;p&gt;&lt;/p&gt;&lt;h4 style="text-align: left;"&gt;Thought Process Behind The Rewrite Above&lt;/h4&gt;&lt;p&gt;One thing I noticed while rewriting the original piece is that the problem was not the ideas themselves.&lt;/p&gt;&lt;p&gt;The ideas are actually good.&lt;/p&gt;&lt;p&gt;The problem was the movement between them.&lt;/p&gt;&lt;p&gt;Writing quality is not just vocabulary, emotional lines, metaphors, or sentence beauty.&lt;/p&gt;&lt;p&gt;But a huge part of strong writing is structural flow.&lt;/p&gt;&lt;p&gt;Meaning: why does this paragraph come after that one?&lt;/p&gt;&lt;p&gt;The original piece had multiple good ideas:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;children interrupting the mother&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;these moments being temporary&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;the child loving the mother&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;motherhood refining mercy&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;the child later admiring knowledge&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;balance&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;But the piece kept changing centers abruptly.&lt;/p&gt;&lt;p&gt;For example, it went from: "the child loves his mother", to: "motherhood refines the woman spiritually".&lt;/p&gt;&lt;p&gt;Then suddenly: "the child later admires knowledge."&lt;/p&gt;&lt;p&gt;Those are not naturally connected yet.&lt;/p&gt;&lt;p&gt;They are individually good ideas, but the transitions are weak.&lt;/p&gt;&lt;p&gt;So instead of adding more lines, I tried identifying the actual spine of the piece.&lt;/p&gt;&lt;p&gt;The stronger center became: The child experiences knowledge through the mother carrying it.&lt;/p&gt;&lt;p&gt;That single idea reorganized the structure.&lt;/p&gt;&lt;p&gt;Now the interruptions themselves become important.&lt;/p&gt;&lt;p&gt;Why?&lt;/p&gt;&lt;p&gt;Because the child is not merely seeing that his mother studies.&lt;/p&gt;&lt;p&gt;He is seeing:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;how she reacts while studying&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;whether knowledge made her gentle or harsh&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;whether the book emotionally pushes him away&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;or whether warmth still exists beside it&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Now the paragraphs connect naturally.&lt;/p&gt;&lt;p&gt;The interruptions lead into emotional atmosphere.&lt;/p&gt;&lt;p&gt;The atmosphere leads into the child's perception of knowledge.&lt;/p&gt;&lt;p&gt;That perception leads into how he may later love knowledge himself.&lt;/p&gt;&lt;p&gt;Then another issue appeared.&lt;/p&gt;&lt;p&gt;The piece still treated knowledge as though it were separate. Which is the core cause of this whole topic.&lt;/p&gt;&lt;p&gt;So the hierarchy itself needed correction.&lt;/p&gt;&lt;p&gt;Knowledge is a means.&lt;/p&gt;&lt;p&gt;The goal is worshipping Allāh correctly.&lt;/p&gt;&lt;p&gt;And among the worship of a woman is properly caring for her children.&lt;/p&gt;&lt;p&gt;So if knowledge-seeking causes neglect of the child, then the means started damaging the objective itself.&lt;/p&gt;&lt;p&gt;That is why I added the overeating analogy.&lt;/p&gt;&lt;p&gt;Food is good.&lt;br /&gt;Health is the goal.&lt;/p&gt;&lt;p&gt;Likewise:&lt;br /&gt;Knowledge is good.&lt;br /&gt;Correct worship is the goal.&lt;/p&gt;&lt;p&gt;That change strengthened the entire ending because now the conclusion comes from principles.&lt;/p&gt;&lt;p&gt;A better form of writing avoids stacking ideas beside each other instead of making one idea produce the next one naturally.&lt;/p&gt;&lt;p&gt;The reader should feel carried forward gradually, not teleported between paragraphs.&amp;nbsp;&lt;/p&gt;&lt;p&gt;Like a gradient.&amp;nbsp;🌿&lt;/p&gt;&lt;p&gt;Thank you for the idea, it bloomed in someone's mind. 🌸&lt;/p&gt;&lt;p&gt;— Abū Sahl, ʿAbdurraḥmān bnu Mīhūb al-Qaddārī al-Jazāʾirī&amp;nbsp;&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-05-06T15:36:00.743Z</blogger:created>
+    <published>2026-05-06T17:17:46.936Z</published>
+    <updated>2026-05-07T06:15:04.235Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/05/not-every-interruption-is-interruption.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-5448645732252499297</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>Do Not Overwhelm Him 📖</title>
+    <content type='html'>&lt;p&gt;Some will say:&lt;br /&gt;&lt;br /&gt;"So what? Do I just show my child text and leave him to struggle with it?" ❓&lt;br /&gt;&lt;br /&gt;No. ⛔️&lt;br /&gt;&lt;br /&gt;You do not dump knowledge on him. 📦&lt;br /&gt;&lt;br /&gt;You introduce it.&lt;br /&gt;&lt;br /&gt;Gently. 🍃&lt;br /&gt;&lt;br /&gt;A few words.&lt;br /&gt;&lt;br /&gt;Large.&lt;br /&gt;&lt;br /&gt;Clear. ✨&lt;br /&gt;&lt;br /&gt;With space around them. ⬜️&lt;br /&gt;&lt;br /&gt;Space is not emptiness.&lt;br /&gt;Space is mercy for the eye and the mind. 🌿&lt;br /&gt;&lt;br /&gt;The child does not read like you.&lt;br /&gt;&lt;br /&gt;His mind takes small steps.&lt;br /&gt;&lt;br /&gt;If you rush him, he learns to hate the road.&lt;br /&gt;&lt;br /&gt;If you ease him, he learns to love walking.&lt;br /&gt;&lt;br /&gt;Space the text around:&lt;br /&gt;So his eye travels.&lt;br /&gt;So his mind pauses.&lt;br /&gt;So he absorbs without drowning.&lt;br /&gt;&lt;br /&gt;Even the greatest of this Ummah began with small steps.&lt;br /&gt;&lt;br /&gt;No one is built in a moment. ⏳&lt;br /&gt;&lt;br /&gt;Protect his pace. 🛡&lt;br /&gt;&lt;br /&gt;Knowledge given with wisdom settles.&lt;br /&gt;&lt;br /&gt;Knowledge forced becomes a burden.&lt;br /&gt;&lt;br /&gt;—Abū Sahl ʿAbdurraḥmān al-Qaddārī (ex-child who hated school, but loved learning)&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-03-28T19:06:31.393Z</blogger:created>
+    <published>2026-03-28T19:06:31.396Z</published>
+    <updated>2026-03-28T19:06:47.074Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/03/do-not-overwhelm-him.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-5771414071524458953</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>The Truth</title>
+    <content type='html'>&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;بسم الله الرحمن الرحيم،&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;Allāh made this universe, and He, ʿazza wa jall, made our brains.&lt;br /&gt;&lt;br /&gt;Our brains are programmable, meaning, what you feed them, what you repeat, what you train them to seek…becomes how they function.&lt;br /&gt;&lt;br /&gt;So it follows that the best programming for the human mind is what Allāh commanded.&lt;br /&gt;&lt;br /&gt;Because the One who made the mind is the One who gave the instructions.&lt;br /&gt;&lt;br /&gt;The more a person aligns themselves with that guidance, the more correctly the mind operates: Clearer priorities, less confusion, less chasing illusions.&lt;br /&gt;&lt;br /&gt;The mind starts functioning the way it was meant to!&lt;br /&gt;&lt;br /&gt;Intelligence is not about appearing smart, or sounding modern, or saying smart things, because that's just theater.&lt;br /&gt;&lt;br /&gt;Being smart serves no better purpose than seeking the truth, and seeking the truth is what actually makes you smarter.&lt;br /&gt;&lt;br /&gt;Why?&lt;br /&gt;Because truth disciplines the mind.&lt;br /&gt;&lt;br /&gt;It forces honesty, humility; it forces you to drop nonsense even when your ego likes it!&lt;br /&gt;&lt;br /&gt;Falsehood does the opposite: it trains the brain to defend nonsense, justify contradictions, and that makes the cables tangled and messy.&lt;br /&gt;&lt;br /&gt;It's that simple.&lt;br /&gt;&lt;br /&gt;The more a person sincerely seeks the truth, the more their mind sharpens.&lt;br /&gt;&lt;br /&gt;Not everyone becomes a genius, but everyone moves closer to the best version of the intellect Allāh gave them.&lt;br /&gt;&lt;br /&gt;Truth improves the mind!&lt;br /&gt;&lt;br /&gt;An improved mind recognizes truth more easily.&lt;br /&gt;&lt;br /&gt;Rinse, and repeat.&lt;br /&gt;&lt;br /&gt;"But...akhi...life is not that simple..."&lt;br /&gt;&lt;br /&gt;I know I know...that's another story, called:&lt;br /&gt;&lt;br /&gt;The heart.&lt;br /&gt;&lt;br /&gt;---&lt;br /&gt;&lt;br /&gt;"One more question...akhi...why are you telling me this, as a parent?"&lt;br /&gt;&lt;br /&gt;Because you have a little mind that has a better chance at adopting that sound natural inclination. Don't miss the chance...save your child.&lt;br /&gt;&lt;br /&gt;You could be a reason for this Ummah to have a better future.&lt;br /&gt;&lt;br /&gt;That future is literally running around asking for cookies now.&lt;br /&gt;&lt;br /&gt;—Abū Sahl, ʿAbdurraḥmān bnu Mīhūb al-Qaddārī al-Jazāʾirī&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-04-14T23:27:45.790Z</blogger:created>
+    <published>2026-04-14T23:33:00.001Z</published>
+    <updated>2026-04-14T23:33:45.123Z</updated>
+    <blogger:location/>
+    <category scheme='tag:blogger.com,1999:blog-6407892710634402235' term='reflection'/>
+    <blogger:filename>/2026/04/the-truth.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-6105094074314156729</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>One Step At A Time</title>
+    <content type='html'>&lt;p&gt;One step at a time&lt;br /&gt;and you shall arrive&lt;br /&gt;The end goal is not the goal&lt;br /&gt;the steps are what we must uphold&lt;br /&gt;Don't overlook your feet&lt;br /&gt;Doing so causes you defeat&lt;br /&gt;I'm talking to myself&lt;br /&gt;but you could still take heed&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-03-28T19:07:24.508Z</blogger:created>
+    <published>2026-03-28T19:07:24.514Z</published>
+    <updated>2026-03-28T19:07:47.906Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/03/one-step-at-time.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-6190128660383882696</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>Do Not Design The Plant 🌱</title>
+    <content type='html'>&lt;b&gt;Do Not Design The Plant&lt;/b&gt; 🌱&lt;br&gt;&lt;br&gt;Many parents do not want to raise a child; they want to realize a plan.&lt;br&gt;They decide in advance who the child should be, what he should excel at, and how his path should look.&lt;br&gt;&lt;br&gt;But the child is not an extension of the parent's unresolved ambitions. He is a human being Allāh created with a specific fitrah, a specific temperament, and a specific set of abilities.&lt;br&gt;&lt;br&gt;When parents &lt;b&gt;force&lt;/b&gt; a shape that does &lt;b&gt;not match&lt;/b&gt; the child, they create &lt;b&gt;friction&lt;/b&gt; where there should have been ease. It is like forcing a triangle into a square: something always breaks.&lt;br&gt;&lt;br&gt;The child either &lt;b&gt;shrinks&lt;/b&gt; into compliance, or &lt;b&gt;hardens&lt;/b&gt; into resistance. Both come at a cost.&lt;br&gt;&lt;br&gt;Your task is &lt;b&gt;not&lt;/b&gt; to design the plant. It &lt;b&gt;already&lt;/b&gt; has one.&lt;br&gt;Your task is to &lt;b&gt;recognize&lt;/b&gt; it, &lt;b&gt;protect&lt;/b&gt; it, and give it what allows it to &lt;b&gt;grow upright&lt;/b&gt;.&lt;br&gt;&lt;br&gt;—Abū Sahl ʿAbdurraḥmān al-Qaddārī (an ex-child)</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-02-23T06:08:37.576Z</blogger:created>
+    <published>2026-02-23T06:08:35.354Z</published>
+    <updated>2026-02-23T06:08:37.576Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/02/do-not-design-plant.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-6370617521848492589</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>DRAFT</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>The Armful</title>
+    <content type='html'>&lt;p&gt;I noticed something in how people think under pressure.&lt;/p&gt;&lt;p&gt;Some minds carry thoughts like an overflowing bundle held in both arms.&lt;/p&gt;&lt;p&gt;Everything is important.&lt;/p&gt;&lt;p&gt;Everything must be kept.&lt;/p&gt;&lt;p&gt;Nothing is allowed to drop.&lt;/p&gt;&lt;p&gt;So the speech becomes urgent, continuous, slightly breathless.&lt;/p&gt;&lt;p&gt;One idea triggers another before the first one is placed down.&lt;/p&gt;&lt;p&gt;And the person is not really presenting thoughts.&lt;/p&gt;&lt;p&gt;He is preventing loss.&lt;/p&gt;&lt;p&gt;The result is not clarity.&lt;/p&gt;&lt;p&gt;It is motion.&lt;/p&gt;&lt;p&gt;You can almost feel it: ideas being hurried forward like objects passed hand to hand without a table.&lt;/p&gt;&lt;p&gt;Nothing is set down.&lt;/p&gt;&lt;p&gt;Everything is in transit.&lt;/p&gt;&lt;p&gt;And in transit, nothing can be inspected properly.&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;On the other side, there are minds that do something different.&lt;/p&gt;&lt;p&gt;They do not begin by holding everything at once.&lt;/p&gt;&lt;p&gt;They arrange.&lt;/p&gt;&lt;p&gt;Even under pressure, they reduce the load into parts.&lt;/p&gt;&lt;p&gt;One claim is held.&lt;/p&gt;&lt;p&gt;The rest wait.&lt;/p&gt;&lt;p&gt;They can pause without panic.&lt;/p&gt;&lt;p&gt;They can return without confusion.&lt;/p&gt;&lt;p&gt;Their speech has a strange stillness inside it.&lt;/p&gt;&lt;p&gt;Not because they think slowly.&lt;/p&gt;&lt;p&gt;But because nothing is being carried in fear of dropping.&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;This is not a matter of speaking much or speaking little.&lt;/p&gt;&lt;p&gt;It is not about silence versus verbosity.&lt;/p&gt;&lt;p&gt;It is about whether thought is being &lt;em&gt;carried&lt;/em&gt; or &lt;em&gt;structured&lt;/em&gt;.&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;And here is the important distinction that is often missed.&lt;/p&gt;&lt;p&gt;Some people appear organized only when nothing is pressing on them.&lt;/p&gt;&lt;p&gt;When the conversation is calm, they sound precise.&lt;/p&gt;&lt;p&gt;When the topic is simple, they sound coherent.&lt;/p&gt;&lt;p&gt;But when pressure enters, the structure dissolves.&lt;/p&gt;&lt;p&gt;Ideas begin to stack instead of settle.&lt;/p&gt;&lt;p&gt;The bundle returns.&lt;/p&gt;&lt;p&gt;This is not structure.&lt;/p&gt;&lt;p&gt;This is temporary order that depends on calm conditions.&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;Real structure is not tested in calmness.&lt;/p&gt;&lt;p&gt;It is tested in load.&lt;/p&gt;&lt;p&gt;When interruption appears.&lt;/p&gt;&lt;p&gt;When multiple ideas compete.&lt;/p&gt;&lt;p&gt;When emotion rises slightly.&lt;/p&gt;&lt;p&gt;When time is limited.&lt;/p&gt;&lt;p&gt;When correction is needed mid-sentence.&lt;/p&gt;&lt;p&gt;That is when the architecture becomes visible.&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;Because under load, two things happen.&lt;/p&gt;&lt;p&gt;Either the mind tries to preserve everything at once.&lt;/p&gt;&lt;p&gt;Or it learns to sequence what matters.&lt;/p&gt;&lt;p&gt;Either it increases speed to avoid loss.&lt;/p&gt;&lt;p&gt;Or it increases structure to prevent collapse.&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;And these two responses look similar on the surface.&lt;/p&gt;&lt;p&gt;Both may sound intelligent.&lt;/p&gt;&lt;p&gt;Both may sound full of content.&lt;/p&gt;&lt;p&gt;But one is preservation under pressure.&lt;/p&gt;&lt;p&gt;The other is organization under pressure.&lt;/p&gt;&lt;p&gt;One is trying not to drop what is already slipping.&lt;/p&gt;&lt;p&gt;The other has already decided what is worth holding.&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;This is why arguments often reveal more than explanations.&lt;/p&gt;&lt;p&gt;Not because arguments make people smarter.&lt;/p&gt;&lt;p&gt;But because they remove the comfort that hides structure.&lt;/p&gt;&lt;p&gt;Suddenly, the “bundle” must be carried while walking.&lt;/p&gt;&lt;p&gt;And the “system” must continue operating while disturbed.&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;There is also a subtle deception here.&lt;/p&gt;&lt;p&gt;People often assume that more information means more understanding.&lt;/p&gt;&lt;p&gt;But sometimes, excess information is not depth.&lt;/p&gt;&lt;p&gt;It is overflow.&lt;/p&gt;&lt;p&gt;Not everything being said is being held.&lt;/p&gt;&lt;p&gt;Some of it is being thrown forward just to keep it from disappearing.&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;The disciplined mind does something almost opposite.&lt;/p&gt;&lt;p&gt;It reduces what is carried in the moment.&lt;/p&gt;&lt;p&gt;Not because it knows less.&lt;/p&gt;&lt;p&gt;But because it knows how to &lt;em&gt;index&lt;/em&gt; what it knows.&lt;/p&gt;&lt;p&gt;So it can place things down without losing them.&lt;/p&gt;&lt;p&gt;And pick them up again when needed.&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;And this is the quiet difference.&lt;/p&gt;&lt;p&gt;One mind depends on continuous holding.&lt;/p&gt;&lt;p&gt;The other depends on reliable return.&lt;/p&gt;&lt;p&gt;One fears silence because silence risks loss.&lt;/p&gt;&lt;p&gt;The other accepts silence because storage is not speech-dependent.&lt;/p&gt;&lt;hr /&gt;&lt;p&gt;So if there is a practical reflection here, it is simple.&lt;/p&gt;&lt;p&gt;When thinking becomes pressured, do not ask only:&lt;/p&gt;&lt;p&gt;“How much can I say?”&lt;/p&gt;&lt;p&gt;Ask instead:&lt;/p&gt;&lt;p&gt;“What am I trying to keep from falling?”&lt;/p&gt;&lt;p&gt;Because sometimes confusion is not lack of knowledge.&lt;/p&gt;&lt;p&gt;It is over-gripping.&lt;/p&gt;&lt;p&gt;And clarity is not more holding.&lt;/p&gt;&lt;p&gt;It is better placement&lt;/p&gt;&lt;hr /&gt;And when speech begins to fragment under load, it is not always a failure of intelligence.&lt;p&gt;Sometimes it is a failure of structure under pressure.&lt;/p&gt;&lt;p&gt;And that distinction matters.&lt;/p&gt;&lt;p&gt;Because one is solved by adding more ideas.&lt;/p&gt;&lt;p&gt;The other is solved by learning how to set them down.&lt;/p&gt;&lt;hr /&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-06-08T15:50:21.053Z</blogger:created>
+    <published>2026-06-08T15:50:21.053Z</published>
+    <updated>2026-06-08T15:52:49.663Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename/>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-6543634672430775801</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>Gentleness</title>
+    <content type='html'>&lt;p&gt;Gentleness is not weakness, nor is it the abandonment of truth. Rather, it is the discipline of the heart when it holds truth. It is strength guided by mercy.&lt;br /&gt;&lt;br /&gt;The world is filled with people who carry unseen wounds. Some walk with grief buried deep within them. Some struggle with loneliness that no one around them notices. Others carry the weight of their own mistakes and shortcomings. From the outside they may appear composed, even strong, yet within them there is turmoil greater than you can fathom.&amp;nbsp;&lt;br /&gt;&lt;br /&gt;A harsh word may seem small to the one who utters it, yet to the one already burdened it can feel like the final stone placed upon a heavy load. Harshness rarely reforms hearts. More often it causes hearts to retreat, to close themselves, and to protect what little peace remains within them.&lt;br /&gt;&lt;br /&gt;This is why gentleness has always been the path that reaches people.&lt;br /&gt;&lt;br /&gt;The Messenger of Allāh ﷺ said:&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;“إِنَّ اللَّهَ رَفِيقٌ يُحِبُّ الرِّفْقَ فِي الْأَمْرِ كُلِّهِ”&lt;/span&gt;&lt;/p&gt;&lt;p&gt;“Indeed, Allāh is Gentle and He loves gentleness in all matters.”&lt;br /&gt;&lt;br /&gt;— [Ṣaḥīḥ al-Bukhārī]&lt;br /&gt;&lt;br /&gt;Gentleness is not merely a tone of voice. It is a way of seeing people. It is the ability to recognise that every person you encounter is fighting battles you cannot see. It is to understand that guidance grows in an atmosphere of mercy, not intimidation.&lt;br /&gt;&lt;br /&gt;History shows that hearts are not conquered by force. They are conquered by patience and compassion. A person who feels understood becomes open to change. A person who feels attacked becomes defensive, even if the truth is clear before them.&lt;br /&gt;&lt;br /&gt;For this reason Allāh commanded gentleness even in the face of arrogance and tyranny. When Mūsā and Hārūn عليهما السلام were sent to the most tyrannical ruler of their time, they were instructed:&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;{فَقُولَا لَهُ قَوْلًا لَيِّنًا}&lt;/span&gt;&lt;/p&gt;&lt;p&gt;“Speak to him with gentle speech.”&lt;br /&gt;&lt;br /&gt;— [Ṭāhā: 44]&lt;br /&gt;&lt;br /&gt;If gentleness was commanded even when addressing Pharaoh — a man who claimed lordship over people, oppressed an entire nation, and ordered the slaughter of innocent children — then how much more should it exist between ordinary people?&lt;br /&gt;&lt;br /&gt;Too often we see someone who is merely mistaken or misguided and instinctively respond with harshness, imagining it to be strength. In reality, it is often weakness and a lack of understanding. True firmness upon the truth does not abandon gentleness; it is disciplined enough to carry the truth without allowing arrogance, anger, or impatience to corrupt the way it is delivered.&lt;br /&gt;&lt;br /&gt;The hearts of people are delicate things. When gentleness disappears, relationships become rigid, advice becomes unbearable, and truth itself begins to feel heavy upon those who hear it. But when gentleness is present, even difficult words can be received with openness.&lt;br /&gt;&lt;br /&gt;The one who carries gentleness within them becomes a source of relief for others. Their presence brings calm rather than tension. Their speech heals rather than wounds. Their character reminds people that mercy still exists in a world that often feels severe.&lt;br /&gt;&lt;br /&gt;And this is perhaps one of the greatest forms of service to humanity: to be someone through whom others feel safe enough to soften their hearts.&lt;br /&gt;&lt;br /&gt;So remain firm upon truth, but clothe that firmness with gentleness. For harshness may silence people, but gentleness reaches their hearts. And hearts, once reached with gentleness, are capable of transformation that force could never achieve.&lt;br /&gt;&lt;br /&gt;Life is brief, and people are weary. What they need most is not more severity, but more mercy.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;أبو رفق&lt;br /&gt;٢٣ رمضان ١٤٤٧ هـ&lt;/span&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;a href="https://t.me/markazabuhurayrah"&gt;&lt;br /&gt;https://t.me/markazabuhurayrah&lt;/a&gt;&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-03-28T19:14:56.685Z</blogger:created>
+    <published>2026-03-28T19:16:00.009Z</published>
+    <updated>2026-03-28T19:16:43.430Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/03/gentleness.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-6648446787413196349</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>How Abu Bakr رضي الله عنه Accepted Islaam — For Children</title>
+    <content type='html'>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;div class="separator" style="clear: both; text-align: center;"&gt;&lt;a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkdql3phEgjI_snVTO0mmhiX3PhxcLzqCVvuIRYpujIQPy2L1J2GxrVx1i9kSIkYC1mT3BqkJLbqUVKVchaXm1Odb6_PC3zNPI9plUSqSlk37fZGhP5-KnolbR4L3RgVbQsIggwAdtlz2wS3LP56BCpQIsVPycY-v0WJ1lWEDzcngiLjvF4yjXDBfGAGh7/s4000/d283329a-01.png" style="margin-left: 1em; margin-right: 1em;"&gt;&lt;img border="0" data-original-height="2250" data-original-width="4000" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkdql3phEgjI_snVTO0mmhiX3PhxcLzqCVvuIRYpujIQPy2L1J2GxrVx1i9kSIkYC1mT3BqkJLbqUVKVchaXm1Odb6_PC3zNPI9plUSqSlk37fZGhP5-KnolbR4L3RgVbQsIggwAdtlz2wS3LP56BCpQIsVPycY-v0WJ1lWEDzcngiLjvF4yjXDBfGAGh7/s16000/d283329a-01.png" /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;✨✨ Major Update ✨✨&lt;br /&gt;&lt;br /&gt;[emoji] Discover How Abu Bakr رضي الله عنه Accepted Islaam — For Children&lt;br /&gt;&lt;br /&gt;When I was a child, I never had a resource that showed the companions of the Prophet ﷺ in a way I could truly understand.&lt;br /&gt;&lt;br /&gt;I remember hearing that Abu Bakr رضي الله عنه “just accepted Islaam” — and I thought, didn’t he think, wonder, or reflect?&lt;br /&gt;&lt;br /&gt;This 76-page journey fills that gap.&lt;br /&gt;Abu Bakr Aṣ-Ṣiddeeq tells his story in a way children can see, touch, and experience:&lt;br /&gt;✨ Bravery&lt;br /&gt;[emoji] Generosity&lt;br /&gt;[emoji] Unwavering trust in the Prophet ﷺ&lt;br /&gt;&lt;br /&gt;With fully-voweled Arabic alongside English, hands-on activities, coloring sections, and active exercises, children can learn, reflect, and grow [emoji] while living the story.&lt;br /&gt;&lt;br /&gt;Parents will find it easy to plant seeds of core values — courage, truthfulness, and love for Islaam — in their children.&lt;br /&gt;&lt;br /&gt;[emoji] Part of the “How Did The Companions Accept Islaam?” series — personal, hands-on, and inspiring.&lt;br /&gt;&lt;br /&gt;Access Details:&lt;br /&gt;[emoji] The Experience: 76 pages designed for printing at home or at a local shop. The landscape format gives children plenty of physical space to write, complete activities, and color.&lt;br /&gt;⚡️ Instant Access: Receive the full 76-page file immediately after purchase.&lt;br /&gt;&lt;br /&gt;[emoji] Price: Free&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;[emoji] &lt;a href="https://payhip.com/b/wqArJ"&gt;https://payhip.com/b/wqArJ&lt;/a&gt;&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-03-28T19:09:34.260Z</blogger:created>
+    <published>2026-03-28T19:10:00.003Z</published>
+    <updated>2026-06-24T12:20:40.505Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/03/how-abu-bakr-accepted-islaam-for.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-7286591099448097512</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>Step By Step, And You'll Grow So Big</title>
+    <content type='html'>&lt;p&gt;Remember, do not think about tasks whole—your brain will choke.&lt;br /&gt;&lt;br /&gt;"You mad?!", said the brain.&lt;br /&gt;"Release depression and failure hormones!!!", the brain as well.&lt;br /&gt;&lt;br /&gt;Divide a single task into sub-tasks.&lt;br /&gt;&lt;br /&gt;فرق، تسود&lt;br /&gt;Farriq, tasood.&lt;br /&gt;Divide them, and you'll conquer them.&lt;br /&gt;&lt;br /&gt;"Ohh....that's more like it!", says the brain.&lt;br /&gt;"Ok ok ok, kill the depression switch, this human is back into his mind, being reasonable and all", the brain as well.&lt;br /&gt;&lt;br /&gt;Humans love jumping to conclusions, it's easier, requires less effort, less scary.&lt;br /&gt;&lt;br /&gt;1+1=11&lt;br /&gt;&lt;br /&gt;Why do maths if you can stick them together?&lt;br /&gt;&lt;br /&gt;That's what happens when you don't think through decisions and conclusions.&lt;br /&gt;&lt;br /&gt;One decision like that after another, they snowball, and now you think you're a failure who's behind everyone and can't seem to be motivated to do anything. It always ends up locked...&lt;br /&gt;&lt;br /&gt;Slow down, step by step, and you'll get there.&lt;br /&gt;&lt;br /&gt;In Algeria, we tell toddlers who try to walk:&lt;br /&gt;"داداش، تكبر قداش"&lt;br /&gt;"Dāddāsh, tekber qaddāsh"&lt;br /&gt;It's baby talk, not really Arabic.&lt;br /&gt;Meaning, step by step, and you'll grow so big.&lt;br /&gt;&lt;br /&gt;Imagine that toddler thinking about racing in the Olympics or whatever.&lt;br /&gt;&lt;br /&gt;I can imagine the life draining out of their eyes. Such a huge gap.&lt;br /&gt;&lt;br /&gt;But even the fastest runner was a toddler once.&lt;br /&gt;&lt;br /&gt;—Abū Sahl, ʿAbdurraḥmān bnu Mīhūb al-Qaddārī al-Jazāʾirī&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-03-28T19:24:50.792Z</blogger:created>
+    <published>2026-03-28T19:25:00.001Z</published>
+    <updated>2026-03-28T19:25:04.349Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/03/step-by-step-and-youll-grow-so-big.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-7295795650250790497</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>Vocabulary Harvest — Arabic Vocabulary App for English Speakers</title>
+    <content type='html'>Vocabulary Harvest — Arabic Vocabulary App for English Speakers&lt;br /&gt;&lt;br /&gt;🔗 &lt;a href="http://vocabulary-harvest.vercel.app"&gt;http://vocabulary-harvest.vercel.app&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;Vocabulary Harvest is a beautiful, offline-first Arabic vocabulary app built for English speakers who are serious about learning.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Start free. Unlock everything for a one-time purchase.&lt;br /&gt;&lt;br /&gt;🌱 15 free lessons to start — no account, no commitment&amp;nbsp;&lt;br /&gt;&lt;br /&gt;🌾 800+ words across 52 lessons — greetings, numbers, health, travel, and beyond&amp;nbsp;&lt;br /&gt;&lt;br /&gt;📖 Full tashkeel on every word — learn correct pronunciation from the start&amp;nbsp;&lt;br /&gt;&lt;br /&gt;🧠 Spaced repetition (SM-2) — the app remembers what you struggle with and brings it back at the right time&amp;nbsp;&lt;br /&gt;&lt;br /&gt;🌾 Three practice modes — Recall, Assemble, and Listen&amp;nbsp;&lt;br /&gt;&lt;br /&gt;🔊 High quality audio pronunciation for every word — falls back to device TTS offline&amp;nbsp;&lt;br /&gt;&lt;br /&gt;📴 Fully offline after first load&lt;br /&gt;&lt;br /&gt;✦ Custom categories — add your own words&lt;br /&gt;&lt;br /&gt;💾 Export and import your progress — never lose your data&lt;br /&gt;&lt;br /&gt;For those learning Arabic to understand the Qurʾān, follow the khuṭbah, or make duʿāʾ without translating in their head — it starts here. One word at a time.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;One-time purchase. No subscription. Free updates.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Note: After purchase you will receive a license key. Enter it at vocabulary-harvest.vercel.app to unlock the full version. The app works in any modern browser and can be saved to your home screen like a native app. Export your progress regularly — clearing browser data will erase it.&lt;br /&gt;&lt;br /&gt;🌼 Price: €14.5&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&amp;nbsp;🔗 Link: &lt;a href="https://payhip.com/b/PgviW"&gt;https://payhip.com/b/PgviW&lt;/a&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-03-28T19:11:46.565Z</blogger:created>
+    <published>2026-03-28T19:13:00.004Z</published>
+    <updated>2026-03-28T19:13:35.248Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/03/vocabulary-harvest-arabic-vocabulary.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-7331911162352358987</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>Discover How Abu Bakr رضي الله عنه Accepted Islaam — For Children</title>
+    <content type='html'>🌟 &lt;b&gt;Discover How Abu Bakr رضي الله عنه Accepted Islaam — For Children&lt;/b&gt; 🌟&lt;br&gt;&lt;br&gt;When I was a child, I never had a book that showed the companions of the Prophet ﷺ in a way I could truly understand.&lt;br&gt;I remember hearing that Abu Bakr رضي الله عنه “just accepted Islaam” — and I thought, &lt;i&gt;didn’t he think, wonder, or reflect?&lt;/i&gt;&lt;br&gt;&lt;br&gt;This book fills that gap.&lt;br&gt;&lt;i&gt;Abu Bakr Aṣ-Ṣiddeeq&lt;/i&gt; tells his story in a way children can &lt;b&gt;see, touch, and experience&lt;/b&gt;:&lt;br&gt;✨ Bravery&lt;br&gt;🌿 Generosity&lt;br&gt;📜 Unwavering trust in the Prophet ﷺ&lt;br&gt;&lt;br&gt;With fully-voweled Arabic alongside English, hands-on activities, coloring pages, and fun exercises, children can &lt;b&gt;learn, reflect, and grow&lt;/b&gt; while enjoying the story.&lt;br&gt;&lt;br&gt;Parents will find it easy to plant seeds of core values — courage, truthfulness, and love for Islaam — in their children.&lt;br&gt;&lt;br&gt;📚 Part of the &lt;i&gt;“How Did The Companions Accept Islaam?”&lt;/i&gt; series — personal, interactive, and inspiring.&lt;br&gt;&lt;br&gt;&lt;b&gt;Digital Purchase Details:&lt;/b&gt;&lt;br&gt;💰 &lt;b&gt;Price:&lt;/b&gt; €3&lt;br&gt;📄 &lt;b&gt;Format:&lt;/b&gt; PDF, designed for printing at home or at a local print shop. Landscape format (11" x 8.5") gives children plenty of space to write, complete activities, and color physically.&lt;br&gt;⚡️ &lt;b&gt;Instant Download:&lt;/b&gt; Receive the PDF immediately after purchase.&lt;br&gt;&lt;br&gt;🔗 Link: https://payhip.com/b/wqArJ</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-02-23T06:10:06.461Z</blogger:created>
+    <published>2026-02-23T06:10:04.255Z</published>
+    <updated>2026-02-23T06:10:06.461Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/02/discover-how-abu-bakr-accepted-islaam.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-7596223760517032818</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>Introduction</title>
+    <content type='html'>&lt;p&gt;&amp;nbsp;بسم الله الرحمن الرحيم،&lt;br /&gt;الحمد لله رب العالمين، وصلى الله على أشرف المرسلين، وعلى آله وصحبه ومن تبعهم بإحسان إلى يوم الدين.&lt;br /&gt;&lt;br /&gt;To proceed:&lt;br /&gt;&lt;br /&gt;This blog shares children’s Islamic books and learning material intended for parents who want to teach their children with clarity, correctness, and restraint.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;What this blog is for&lt;/b&gt;&amp;nbsp;&lt;br /&gt;&lt;/p&gt;&lt;ul style="text-align: left;"&gt;&lt;li&gt;Children’s books based on authentic Islamic sources&lt;/li&gt;&lt;li&gt;Material that preserves meaning without entertainment-driven distortion&lt;/li&gt;&lt;li&gt;Resources to help parents explain core concepts properly&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br /&gt;&lt;b&gt;What this channel avoids&lt;/b&gt;&amp;nbsp;&lt;br /&gt;&lt;/p&gt;&lt;ul style="text-align: left;"&gt;&lt;li&gt;Tasweer and character-based entertainment&lt;/li&gt;&lt;li&gt;Watering down aqeedah or history, or Islaam, in general&lt;/li&gt;&lt;li&gt;Content designed primarily to amuse rather than teach&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br /&gt;&lt;b&gt;What to expect&lt;br /&gt;&lt;/b&gt;&lt;/p&gt;&lt;ul style="text-align: left;"&gt;&lt;li&gt;Infrequent posts&lt;/li&gt;&lt;li&gt;Short excerpts or announcements&lt;/li&gt;&lt;li&gt;No discussion threads, no noise&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;This channel is intended for parents and teachers. Not for children to browse on their own.&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2025-12-19T05:26:27.923Z</blogger:created>
+    <published>2025-12-19T05:28:00.003Z</published>
+    <updated>2025-12-19T05:28:32.655Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2025/12/introduction.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-8181737348849646637</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>The Treasure Of Children</title>
+    <content type='html'>&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;&amp;nbsp;كَنْزُ الأَطْفَالِ&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Kanzu Al-Aṭfāl&lt;br /&gt;The Treasure Of Children&lt;br /&gt;&lt;br /&gt;By Doctor Fayṣal bnu Misfir al-Wādiʿī&lt;br /&gt;Translated and designed by&lt;br /&gt;ʿAbdurraḥmān bnu Mīhūb al-Qaddārī&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;A simplified millenary for teaching children Creed (Aqīdah), Monotheism (Tawḥīd), Jurisprudence (Fiqh), Biography (Sīrah), Etiquette (Adab), Transactions (Muʿāmalāt), and more, using the question-and-answer method&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Link: &lt;a href="https://drive.google.com/file/d/1lMLTtIGSsFMlGFUrJ5ZERV7cfAwAHElP/view?usp=sharing" target="_blank"&gt;https://drive.google.com/file/d/1lMLTtIGSsFMlGFUrJ5ZERV7cfAwAHElP/view?usp=sharing&amp;nbsp;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;&lt;!--more--&gt;&lt;p&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;&amp;nbsp;الحمد لله حمداً كثيراً طيباً مباركاً فيه، وأشهد أن لا إله إلا الله وحده لا شريك له، وأشهد أن محمداً عبده ورسوله، أما بعد:&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;In the Name of Allāh, the Merciful, the All-Merciful. All praise is due to Allāh, a praise that is plentiful, pure, and blessed. I bear witness that there is no god except Allāh alone, without partner, and I bear witness that Muḥammad is His slave and Messenger.&lt;br /&gt;To proceed:&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;فإن الاهتمام بـ:&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;• تعليم الصغار.&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;• وتفقيههم في دين الله.&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;مطلبٌ عظيمٌ؛ حثّ عليه كتاب ربنا، وسنة نبينا محمد ﷺ.&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Focusing on:&lt;br /&gt;&amp;nbsp; &amp;nbsp; • Teaching the young.&lt;br /&gt;&amp;nbsp; &amp;nbsp; • Granting them understanding of the religion of Allāh.&lt;br /&gt;This is a great objective encouraged by the Book of our Lord and the Sunnah of our Prophet Muḥammad ṣallallāhu ʿalayhi wa-sallam.&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;فقد صح عند الترمذي عن ابن عباس رضي الله عنهما أن النبي ﷺ قال له: « يا غلام إني أعلمك كلمات ...... » الحديث.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;It was authentically reported by at-Tirmithi, on the authority of Ibn ʿAbbās (may Allāh be pleased with them), that the Prophet, ṣallallāhu ʿalayhi wa-sallam, said to him: "O young man, I shall teach you some words..." (the ḥadīth).&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;وصح عن عبد الله بن عمرو رضي الله عنهما أن رسول الله ﷺ قال: «علموا صبيانكم الصلاة في سبع سنين ...... » الحديث.&amp;nbsp;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;And it was authentically reported from ʿAbdullāh bnu ʿAmr (may Allāh be pleased with them) that the Messenger of Allāh ﷺ said: "Teach your children prayer at seven years..." (the ḥadīth).&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;وإن التعليم على طريقة السؤال والجواب لهي:&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;• طريقةٌ نبويةٌ مفيدةٌ،&amp;nbsp;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Teaching through the question-and-answer method is:&lt;br /&gt;&amp;nbsp; &amp;nbsp; • A beneficial Prophetic method.&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;وقد قال النبي ﷺ لمعاذ رضي الله عنه: «أتدري ما حق الله على العباد؟ وما حق العباد على الله؟»&amp;nbsp;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;The Prophet, ṣallallāhu ʿalayhi wa-sallam, said to Muʿāth (may Allāh be pleased with him): "Do you know what is the right of Allāh over His slaves? And what is the right of the slaves over Allāh?"&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;وقال ﷺ في حديث آخر: «إن من الشجر شجرة مثلها مثل المسلم لا يسقط ورقها أخبروني ما هي».&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;In another Hadith, he, ṣallallāhu ʿalayhi wa-sallam, said: "Indeed, among the trees there is a tree whose likeness is that of a Muslim; its leaves do not fall. Tell me, which one is it?"&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;وهذه الطريقة:&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;• أقرب إلى الفهم والتفهيم.&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;• وأوضح في التعلم والتعليم.&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;This method:&lt;br /&gt;&amp;nbsp; &amp;nbsp; • Is closer to [achieving] understanding and comprehension.&lt;br /&gt;&amp;nbsp; &amp;nbsp; • Is clearer for learning and teaching.&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;ومن هنا؛ فهذه مجموعة أسئلة يزيد عددها على الألف سؤال، كتبتها بطريقة مختصرة:&amp;nbsp;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Hence, this is a collection of questions numbering more than a thousand, which I have written in a concise manner.&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;احتوت على أهم المهمات من أمور الدين، وأصول الإيمان، ومبادئ الفقه، والآداب، والمعاملات، والسيرة، وغيرها. تدعوا الحاجة والضرورة إلى معرفتها.&amp;nbsp;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;It contains the most important matters of religion: the foundations of faith (īmān), principles of jurisprudence (Fiqh), etiquette (Adab), transactions (Muʿāmalāt), biography (Sīrah), and others—matters for which there is a pressing need and necessity to know.&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;خصصتها للصغار ولا يستغني عنها الكبار.&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;I have designated it for the young, though adults cannot do without it either.&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;وقد تحريت جهدي أن تكون جميع الأسئلة مبنيةً على أدلة صحيحة من الكتاب والسنة.&amp;nbsp;&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;I have strived to ensure all questions are based on authentic evidence from the Book and the Sunnah.&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;لكني لم أذكر الأدلة:&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;However, I did not mention the evidence [here]:&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;أولاً: لطلب الاختصار. ثانياً: لأن هذا سيكون -إن شاء الله- في كتاب آخر؛ يكون بمثابة الشرح والتوسع في هذه الأسئلة. ثالثاً: يكون هذا القدر من الجواب هو المطلوب من الصغير أن يحفظه، ويقوم المدرس بشرح الجواب، وذكر الدليل على ذلك.&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp; &amp;nbsp; 1.&amp;nbsp; For the sake of brevity.&lt;br /&gt;&amp;nbsp; &amp;nbsp; 2.&amp;nbsp; Because this will be—if Allāh wills—in another book that will serve as an explanation and expansion of these questions.&lt;br /&gt;&amp;nbsp; &amp;nbsp; 3.&amp;nbsp; So that this amount of the answer is what the child is required to memorize, while the teacher explains the answer and mentions the evidence for it.&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;نسأل الله أن ينفع بها أبناء المسلمين، وأن يجعلها من خير ما يدخر لنا عند رب العالمين. ونسأل الله أن يجزي خيراً من قام بمراجعتها، أو أعان على طبعها، والله الموفق والهادي إلى سواء السبيل.&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;We ask Allāh to benefit the children of the Muslims with it, to make it a source of goodness stored for us with the Lord of the Worlds, and we ask Allāh to reward whoever reviews it, helps in its printing, or assists in its distribution. Allāh is the Giver of Success, the Guide to the Straight Path.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;كتبه: الدكتور فَيْصَلُ بْنُ مِسْفِرِ بْنِ مِعْوَضِ الزِّنَامِيُّ الْوَادِعِيُّ.&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;Written by: Dr. Fayṣal bnu Misfir bni Miʿwaḍ az-Zināmī al-Wadiʿī.&amp;nbsp;&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-03-28T19:17:53.497Z</blogger:created>
+    <published>2026-03-28T19:22:00.004Z</published>
+    <updated>2026-03-28T19:22:24.506Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/03/the-treasure-of-children.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-8365269216627956749</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>What Does It Mean To "Do Your Best"?</title>
+    <content type='html'>&lt;p&gt;&amp;nbsp;بسم الله الرحمن الرحيم&lt;br /&gt;&lt;br /&gt;What does it mean to "do your best"?&lt;br /&gt;&lt;br /&gt;Does it mean pushing yourself to the maximum? More effort? More time? More exhaustion? Should we assume the closer we are to collapse, the closer we are to sincerity?&lt;br /&gt;&lt;br /&gt;This assumption is not only wrong. It is dangerous.&lt;br /&gt;&lt;br /&gt;Because there are two very different things people call "their best".&lt;br /&gt;&lt;br /&gt;The first is your physical maximum. The absolute most you can extract from yourself in a moment. It ignores tomorrow. It ignores recovery. It ignores limits.&lt;br /&gt;&lt;br /&gt;It is intense.&lt;br /&gt;&lt;br /&gt;Intensity feels meaningful. It gives the ego something to admire.&lt;br /&gt;&lt;br /&gt;But it does not last.&lt;br /&gt;&lt;br /&gt;The second is your sustainable best. This is the effort you can return to again and again. It respects your human limits. It protects continuity. It is stable.&lt;br /&gt;This is the real measure.&lt;br /&gt;&lt;br /&gt;Because what transforms you is not what you can do once. It is what you can keep doing.&lt;br /&gt;&lt;br /&gt;A person may push himself to an extreme level of worship, study, or effort for a week. He sleeps less. He strains himself. He feels sincere.&lt;br /&gt;&lt;br /&gt;Then:&lt;br /&gt;His body weakens.&lt;br /&gt;His mind resists.&lt;br /&gt;He slows down.&lt;br /&gt;&lt;br /&gt;It does not stop there.&lt;br /&gt;&lt;br /&gt;He begins to think:&lt;br /&gt;"Why can't I do what I was doing before?"&lt;br /&gt;"Have I become lazy?"&lt;br /&gt;"Has Allāh deprived me?"&lt;br /&gt;&lt;br /&gt;He mistakes his collapse for a spiritual failure, when in reality it was a structural failure.&lt;br /&gt;&lt;br /&gt;He built something he was never meant to sustain.&lt;br /&gt;&lt;br /&gt;A quiet trap.&lt;br /&gt;&lt;br /&gt;The ego pushes you into extremes, and when you inevitably fall, it accuses you.&amp;nbsp;&lt;br /&gt;&lt;br /&gt;Because you stopped satisfying it.&lt;br /&gt;&lt;br /&gt;But real devotion is not proven by peaks.&lt;br /&gt;It is proven by continuity.&lt;br /&gt;Consistency is what reshapes you.&lt;br /&gt;The body adapts to repeated action. The brain strengthens pathways it uses often.&lt;br /&gt;The soul settles into what it practices regularly.&lt;br /&gt;&lt;br /&gt;This is how change becomes permanent.&lt;br /&gt;&lt;br /&gt;Sustainable effort is not less.&lt;br /&gt;It is superior. Because it survives.&lt;br /&gt;&lt;br /&gt;It protects you from burnout. It protects you from despair. It protects you from the illusion that sincerity must destroy you.&lt;br /&gt;&lt;br /&gt;Doing your best does not mean squeezing out the maximum possible effort today.&lt;br /&gt;&lt;br /&gt;It means offering the best effort you can continue to offer.&lt;br /&gt;&lt;br /&gt;It means understanding that you are not built for constant extremes.&lt;br /&gt;&lt;br /&gt;You are built for persistence.&lt;br /&gt;&lt;br /&gt;Allāh does not burden you beyond the limits He created you with.&lt;br /&gt;&lt;br /&gt;When you understand this, anxiety loses its voice.&lt;br /&gt;You stop panicking when your energy fluctuates.&lt;br /&gt;You stop interpreting normal human variation as spiritual failure.&lt;br /&gt;&lt;br /&gt;You focus on staying in motion.&lt;br /&gt;Even slowly.&lt;br /&gt;Even quietly.&lt;br /&gt;&lt;br /&gt;Because real growth happens quietly.&lt;br /&gt;&lt;br /&gt;A reminder for myself, then, to you, really.&lt;br /&gt;&lt;br /&gt;—Abū Sahl ʿAbdurraḥmān al-Qaddārī&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-03-28T19:08:36.531Z</blogger:created>
+    <published>2026-03-28T19:08:36.535Z</published>
+    <updated>2026-03-28T19:08:59.609Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/03/what-does-it-mean-to-do-your-best.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-8543993019635512141</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>You Can't Pass On The Love Of The Salaf If You Yourself Don't Feel It</title>
+    <content type='html'>&lt;p&gt;Dear parents,&lt;br /&gt;&lt;br /&gt;You can't pass on the love of the salaf if you yourself don't feel it.&lt;br /&gt;&lt;br /&gt;"What do I do then? Don't just drop problems on us and disappear…".&lt;br /&gt;&lt;br /&gt;It's actually quite easy—and enjoyable:&lt;br /&gt;Learn about them alongside your child.&lt;br /&gt;&lt;br /&gt;"Mommy and daddy are also learning with me…must be important!"&lt;br /&gt;&lt;br /&gt;That's a child's subconscious.&lt;br /&gt;&lt;br /&gt;Children are…marvelous, to say the least. Allāh's creation is! It's our mistake for letting it fade by not nurturing it with what preserves it.&lt;br /&gt;&lt;br /&gt;Enjoy this next short piece:&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;&lt;blockquote&gt;Mind Expansion in a Chain of Awe&lt;br /&gt;Picture him, a man in rough clothes, a man who does not bend, a man with īmān strong enough to guide an ummah.&lt;br /&gt;&lt;br /&gt;A man who led the people into victories no one expected.&lt;br /&gt;A man who faced empires that thought they were eternal…&lt;br /&gt;&lt;br /&gt;And by what means? Horses and camels. Dust and orders. Kisrā never saw it coming.&lt;br /&gt;&lt;br /&gt;Again, picture him. A single man Allāh chose to lead the ummah. Not from a throne. Not from above. From the ground. His steps raised dust. He slept on it.&lt;br /&gt;&lt;br /&gt;He summed it up in one line:&lt;br /&gt;"We are a people Allāh honored by Islām. If we were to seek honor by other than Islām, Allāh will humiliate us".&lt;br /&gt;&lt;br /&gt;That's ʿUmar.&lt;br /&gt;&lt;br /&gt;Now, perhaps a thought comes to your mind. Another man…&lt;br /&gt;&lt;br /&gt;Who casts that bigger shadow?&lt;br /&gt;&lt;br /&gt;Abu Bakr.&lt;br /&gt;&lt;br /&gt;Earlier. Firmer. Stronger.&lt;br /&gt;He steered the ummah when it wavered, when hearts shook after the Prophet ﷺ passed.&lt;br /&gt;He did not use force. He displayed certainty. And that certainty poured into every heart.&lt;br /&gt;&lt;br /&gt;His īmān was heavier than that of the whole ummah. Yes. ʿUmar included.&lt;br /&gt;&lt;br /&gt;ʿUmar knew and mentioned a lot how Abu Bakr was levels above him.&lt;br /&gt;&lt;br /&gt;That is Abu Bakr.&lt;br /&gt;&lt;br /&gt;Now, think higher still. The two of them—ministers of whom?&lt;br /&gt;&lt;br /&gt;The Messenger of Allāh ﷺ.&lt;br /&gt;&lt;br /&gt;Whatever greatness you felt reflecting on ʿUmar and Abu Bakr…[complete this sentence however you wish…you get the idea].&lt;br /&gt;&lt;br /&gt;And all three were created by Allāh, عز وجل.&lt;br /&gt;&lt;br /&gt;Think about that.&lt;br /&gt;&lt;br /&gt;—Abū Sahl, ʿAbdurraḥmān al-Qaddārī&lt;/blockquote&gt;&lt;p&gt;&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-03-28T19:10:22.138Z</blogger:created>
+    <published>2026-03-28T19:11:00.002Z</published>
+    <updated>2026-03-28T19:11:16.311Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/03/you-cant-pass-on-love-of-salaf-if-you.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-8621546960629687934</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>Do Not Do The Thinking For Him 💭☁️</title>
+    <content type='html'>&lt;p&gt;The child was not created empty.&lt;br /&gt;&lt;br /&gt;He was created with a mind that completes what it does not see, and builds what does not exist in front of him.&lt;br /&gt;&lt;br /&gt;Give him a stick, and it becomes a horse. 🌿&lt;br /&gt;Give him a stone, and it becomes treasure. 💎&lt;br /&gt;Give him nothing, and he creates a world. 🌍&lt;br /&gt;&lt;br /&gt;This is not a defect. This is the mind working as it was designed.&lt;br /&gt;&lt;br /&gt;But when you give him ready-made images for everything, you close the doors he was meant to open. 🚪&lt;br /&gt;&lt;br /&gt;There is nothing left to complete. Nothing left to imagine. Nothing left to build. ⛔️&lt;br /&gt;&lt;br /&gt;He becomes a receiver, not a creator.&lt;br /&gt;&lt;br /&gt;Like the one who relies on a calculator for every small sum, until he can no longer calculate without it. 🧮&lt;br /&gt;&lt;br /&gt;The tool did not increase his ability. It replaced it.&lt;br /&gt;&lt;br /&gt;Images do the same.&lt;br /&gt;&lt;br /&gt;They give the answer before the question is formed.❓&lt;br /&gt;They give the form before the mind searches for it. 🔍&lt;br /&gt;&lt;br /&gt;And a mind that does not search, weakens.&lt;br /&gt;&lt;br /&gt;Protect his imagination. 🛡&lt;br /&gt;&lt;br /&gt;Do not rush to fill his world with finished pictures.&lt;br /&gt;&lt;br /&gt;Leave space for him to see what is not there. ⬜️&lt;br /&gt;&lt;br /&gt;That space is where the mind grows. 🌱&lt;br /&gt;&lt;br /&gt;—Abū Sahl ʿAbdurraḥmān al-Qaddārī (who used to turn sticks into horses and run around the house making horse noises)&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-03-28T19:05:43.376Z</blogger:created>
+    <published>2026-03-28T19:06:00.001Z</published>
+    <updated>2026-03-28T19:06:04.430Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/03/do-not-do-thinking-for-him.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+  <entry>
+    <id>tag:blogger.com,1999:blog-6407892710634402235.post-9117638374811465546</id>
+    <blogger:type>POST</blogger:type>
+    <blogger:status>LIVE</blogger:status>
+    <author>
+      <name>عبد الرحمن بن ميهوب القداري</name>
+      <uri>https://arm-alqaddari.codeberg.page/</uri>
+      <blogger:type>BLOGGER</blogger:type>
+    </author>
+    <title>Teaching In Harmony With The Fitrah</title>
+    <content type='html'>&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;&lt;/span&gt;&lt;/p&gt;&lt;div class="separator" style="clear: both; text-align: center;"&gt;Teaching In Harmony&lt;br /&gt;With The Fitrah&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;By&lt;br /&gt;ʿAbdurraḥmān bnu Mīhūb al-Qaddārī&lt;/div&gt;&amp;nbsp;&lt;p&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;!--more--&gt;&amp;nbsp;&lt;p&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;&amp;nbsp;بسم الله الرحمن الرحيم&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;As parents and teachers, we carry the responsibility of shaping young minds and hearts.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;We want our children to recognize what is right, love what is true, and develop the ability to distinguish guidance from misguidance.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;We strive to nurture their curiosity and plant seeds (foundations) of knowledge that take root, so they can grow into individuals who act from understanding rather than mere imitation.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;For that, it helps to remember that children are born upon the fitrah (sound nature), naturally attuned to what is right and what is wrong. They sense harmony and dissonance instinctively, even before they can explain it. When something clashes with their nature, they often feel it before they understand it.&lt;br /&gt;Allāh made the Sharīʿah in harmony with the fitrah He placed in us.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;﴿ فَأَقِمۡ وَجۡهَكَ لِلدِّينِ حَنِيفٗاۚ فِطۡرَتَ ٱللَّهِ ٱلَّتِي فَطَرَ ٱلنَّاسَ عَلَيۡهَاۚ لَا تَبۡدِيلَ لِخَلۡقِ ٱللَّهِۚ ذَٰلِكَ ٱلدِّينُ ٱلۡقَيِّمُ وَلَٰكِنَّ أَكۡثَرَ ٱلنَّاسِ لَا يَعۡلَمُونَ ﴾&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;“So set your face firmly toward the religion as a ḥanīf—the fiṭrah of Allāh upon which He has created mankind. There is no altering the creation of Allāh. That is the upright religion, but most people do not know” [Ar-Rūm: 30].&lt;br /&gt;&lt;br /&gt;Al-Imām as-Saʿdī says:&lt;br /&gt;This command that We have given you is “the fiṭrah of Allāh upon which He has created mankind”. He has placed in their minds its goodness and the repugnance of what contradicts it.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;Allāh has placed in the hearts of all creation an inclination toward all the outward and inward rulings of the Sharīʿah. He has placed in their hearts love for the truth and preference for the truth, and this is the reality of the fiṭrah.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;Whoever departs from this foundation does so due to an external factor that affects his fiṭrah and corrupts it, as the Prophet, ṣallallāhu ʿalayhi wa-sallam, said: “Every child is born upon the fiṭrah; then his parents make him a Jew, a Christian, or a Magian”.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;“There is no altering the creation of Allāh”, meaning, no one can alter Allāh’s creation by making the created being upon other than the disposition Allāh has placed him upon.&lt;br /&gt;&lt;br /&gt;Why am I highlighting this for you?&lt;/p&gt;&lt;p&gt;&lt;br /&gt;First, feeling uneasy about a concept in Islām is almost always the result of misunderstanding, whether deliberate or accidental. That misunderstanding creates a clash with the fitrah.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;Second, in children, this clash can be quiet or forceful.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;This is why striving to educate oneself is so important. Teaching a distorted or deficient understanding does not remain neutral—it creates internal friction. The child may not argue, but the discomfort quietly settles within.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;In other words: The default in human beings is accepting the teachings of Islām, if the child exhibits signs of rebellion or being annoyed, that’s your sign to check which piece of the puzzle is out of place. Fix it, and the rest of the pieces will naturally align, inshāʾ Allāh.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;How do you find that piece and correct it? Through knowledge, education, practice, and sharing.&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;Another important principle is restraint. Do not force upon children what Allāh did not make obligatory. Allāh commanded what is required and encouraged what is virtuous, and He is All-Wise. This distinction exists for a reason.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;﴿فَمَن شَهِدَ مِنكُمُ ٱلشَّهۡرَ فَلۡيَصُمۡهُۖ وَمَن كَانَ مَرِيضًا أَوۡ عَلَىٰ سَفَرٖ فَعِدَّةٞ مِّنۡ أَيَّامٍ أُخَرَۗ يُرِيدُ ٱللَّهُ بِكُمُ ٱلۡيُسۡرَ وَلَا يُرِيدُ بِكُمُ ٱلۡعُسۡرَ﴾&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;“So whoever of you sights the month, he must observe fasts that month, and whoever is ill or on a journey, the same number [of days which one did not observe fasts must be made up] from other days. Allāh intends for you ease, and He does not want to make things difficult for you” [Al-Baqarah: 185].&lt;br /&gt;&lt;br /&gt;When something encouraged is imposed as if it were obligatory, it crosses limits that Allāh, out of mercy, did not impose. What was meant to nurture can become a burden. What was meant to draw closer can push away.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;عَنْ أَبِي هُرَيْرَةَ، عَنِ النَّبِيِّ صلى الله عليه وسلم قَالَ ‏ "‏إِنَّ الدِّينَ يُسْرٌ، وَلَنْ يُشَادَّ الدِّينَ أَحَدٌ إِلاَّ غَلَبَهُ، فَسَدِّدُوا وَقَارِبُوا وَأَبْشِرُوا، وَاسْتَعِينُوا بِالْغَدْوَةِ وَالرَّوْحَةِ وَشَىْءٍ مِنَ الدُّلْجَةِ‏‏".&lt;/span&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;From Abū Hurayra, from the Prophet, ṣallallāhu ʿalayhi wa-sallam, who said: “Religion is ease, and no one overburdens himself in religion except that it overwhelms him. So aim straight, draw near, embrace glad tidings, and make use of the morning, the afternoon, and a portion of the night”. Ṣaḥīḥ al-Bukhārī (39).&lt;br /&gt;&lt;br /&gt;Teach obligations clearly. Encourage virtues gently. Let the Sharīʿah remain proportionate, as Allāh made it. This preserves both understanding and fitrah.&lt;br /&gt;But I’m Not Perfect!&lt;/p&gt;&lt;p&gt;&lt;br /&gt;Of course. This is not a call to perfection. Parents are not expected to be scholars, nor to never make mistakes. Error is human, and children can tolerate mistakes when they come with honesty. Allāh does not hold us accountable for honest mistakes made while sincerely doing our best.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p dir="rtl" style="text-align: right;"&gt;&lt;span style="font-family: Amiri;"&gt;﴿ لا يُكَلِّفُ ٱللَّهُ نَفۡسًا إِلَّا وُسۡعَهَاۚ لَهَا مَا كَسَبَتۡ وَعَلَيۡهَا مَا ٱكۡتَسَبَتۡۗ رَبَّنَا لَا تُؤَاخِذۡنَآ إِن نَّسِينَآ أَوۡ أَخۡطَأۡنَاۚ رَبَّنَا وَلَا تَحۡمِلۡ عَلَيۡنَآ إِصۡرٗا كَمَا حَمَلۡتَهُۥ عَلَى ٱلَّذِينَ مِن قَبۡلِنَاۚ رَبَّنَا وَلَا تُحَمِّلۡنَا مَا لَا طَاقَةَ لَنَا بِهِۦۖ وَٱعۡفُ عَنَّا وَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَآۚ أَنتَ مَوۡلَىٰنَا فَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ ﴾&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br /&gt;“Allāh burdens not a person beyond his scope. He gets reward for that (good) which he has earned, and he is punished for that (evil) which he has earned. "Our Lord! Punish us not if we forget or fall into error, our Lord! Lay not on us a burden like that which You did lay on those before us; our Lord! Put not on us a burden greater than we have strength to bear. Pardon us and grant us Forgiveness. Have mercy on us. You are our Mawlā (Patron, Supporter and Protector, etc.) and give us victory over the disbelieving people” [Al-Baqarah: 286].&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;We’re on an icy road. We will slip. Hold fast. Aim straight, draw near, and embrace glad tidings.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;May Allāh grant us and you beneficial knowledge, and benefit us through it.&lt;br /&gt;May Allāh grant you barakah in your offspring.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;</content>
+    <blogger:metaDescription/>
+    <blogger:created>2026-01-26T22:33:07.896Z</blogger:created>
+    <published>2026-03-28T19:02:00Z</published>
+    <updated>2026-03-28T19:02:02.307Z</updated>
+    <blogger:location/>
+    <category/>
+    <blogger:filename>/2026/03/teaching-in-harmony-with-fitrah.html</blogger:filename>
+    <link/>
+    <enclosure/>
+    <blogger:trashed/>
+  </entry>
+</feed>

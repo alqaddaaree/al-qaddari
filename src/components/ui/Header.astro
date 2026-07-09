@@ -1,9 +1,13 @@
 ---
 import Navigation from './Navigation.astro';
 ---
+
 <header class="site-header">
   <div class="container">
-    <a href="/" class="site-title">عبد الرحمن القداري</a>
+    <a href="/" class="site-title">
+      <img src="/logo.jpg" alt="عبد الرحمن القداري" class="site-logo" />
+      <span class="site-name">عبد الرحمن القداري</span>
+    </a>
     <Navigation />
   </div>
 </header>
@@ -13,21 +17,46 @@ import Navigation from './Navigation.astro';
     padding: var(--space-md) 0;
     border-bottom: 1px solid var(--color-border);
   }
+
   .site-header .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
+
   .site-title {
-    font-family: var(--font-arabic-heading);
-    font-size: 1.8rem;
-    font-weight: 800;
-    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
     text-decoration: none;
     color: var(--color-text);
   }
+
   .site-title:hover {
     color: var(--color-accent);
+  }
+
+  .site-logo {
+    height: clamp(5rem, 3vw, 5rem);
+    width: auto;
+    border-radius: 4px;
+  }
+
+  .site-name {
+    font-family: var(--font-arabic-heading);
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-weight: 800;
+    letter-spacing: 0.02em;
+  }
+
+  @media (max-width: 600px) {
+    .site-name {
+      font-size: clamp(0.9rem, 3.5vw, 1.2rem);
+    }
+
+    .site-logo {
+      height: clamp(1.4rem, 3.5vw, 2rem);
+    }
   }
 </style>
