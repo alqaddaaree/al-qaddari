@@ -6,10 +6,12 @@ import Footer from '../ui/Footer.astro';
 export interface Props {
   title: string;
   description?: string;
+  image?: string;
+  url?: string;
 }
-const { title, description } = Astro.props;
+const { title, description, image, url } = Astro.props;
 ---
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} image={image} url={url}>
   <Header />
   <main class="main-content">
     <slot />

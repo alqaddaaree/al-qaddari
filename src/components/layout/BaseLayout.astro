@@ -4,9 +4,15 @@ import '/src/styles/global.css';
 export interface Props {
   title: string;
   description?: string;
+  image?: string;
+  url?: string;
 }
-const { title, description } = Astro.props;
+const { title, description, image, url } = Astro.props;
+const siteUrl = import.meta.env.SITE || 'https://al-qaddari.com';
+const pageImage = image || '/logo.jpg'; // fallback to your logo
+const pageUrl = url || `${siteUrl}${Astro.url.pathname}`;
 ---
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
   <head>
@@ -15,17 +21,44 @@ const { title, description } = Astro.props;
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
 
-    <!-- Favicon -->
+    <!-- ─── Favicon ─── -->
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
-    <!-- Google Fonts -->
+    <!-- ─── Open Graph / Social Media ─── -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description || 'موقع الباحث والمحقق عبد الرحمن القداري'} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:image" content={`${siteUrl}${pageImage}`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="ar_AR" />
+    <meta property="og:site_name" content="عبد الرحمن القداري" />
+
+    <!-- ─── Twitter Card ─── -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description || 'موقع الباحث والمحقق عبد الرحمن القداري'} />
+    <meta name="twitter:image" content={`${siteUrl}${pageImage}`} />
+
+    <!-- ─── Google Fonts ─── -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet" />
   </head>
+  <!-- ─── Analytics ─── -->
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C3VZNCTPC6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C3VZNCTPC6');
+</script>
   <body>
     <slot />
   </body>
