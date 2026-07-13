@@ -175,3 +175,7 @@ content:
         label: مميّز
         type: boolean
         default: false
+      - name: body
+        label: محتوى المقال
+        type: rich-text
+        required: true
